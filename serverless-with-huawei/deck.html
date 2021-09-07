@@ -213,12 +213,75 @@ mCloudDB.createObjectType(ObjectTypeInfoHelper.getObjectTypeInfo());
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-class="invert" class="invert" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--class:invert;">
 <header>Building Serverless Apps with AppGallery Connect</header>
+<h2>Setup</h2>
+<pre><code class="language-Java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>AGCStorageManagement storageManagement = AGCStorageManagement.getInstance();
+AGConnectOptions cnOptions = <span class="hljs-keyword">new</span> AGConnectOptionsBuilder().setRoutePolicy(AGCRoutePolicy.CHINA).build(<span class="hljs-keyword">this</span>);
+AGConnectInstance cnInstance = AGConnectInstance.buildInstance(cnOptions);
+AGCStorageManagement storageManagement= AGCStorageManagement.getInstance(cnInstance, <span class="hljs-string">&quot;bucket name&quot;</span>);
+</span></span></foreignObject></svg></code></pre>
+<pre><code class="language-Java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>StorageReference reference = storageManagement.getStorageReference();
+<span class="hljs-comment">//or</span>
+StorageReference reference = storageManagement.getStorageReference(<span class="hljs-string">&quot;images/demo.jpg&quot;</span>);
+<span class="hljs-comment">//or</span>
+StorageReference reference = storageManagement.getReferenceFromUrl(AGConnectInstance.getInstance(), <span class="hljs-string">&quot;https://xxxxxx&quot;</span>);
+</span></span></foreignObject></svg></code></pre>
+<footer>@devwithzachary</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-class="invert" class="invert" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--class:invert;">
+<header>Building Serverless Apps with AppGallery Connect</header>
+<h2>Upload</h2>
+<pre><code class="language-Java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>UploadTask task = reference.putFile(<span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;path/images/test.jpg&quot;</span>));
+task.addOnFailureListener(<span class="hljs-keyword">new</span> OnFailureListener(){
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onFailure</span><span class="hljs-params">(<span class="hljs-meta">@NonNull</span> Exception exception)</span> </span>{
+    }
+}).addOnSuccessListener(<span class="hljs-keyword">new</span> OnSuccessListener&lt;UploadTask.UploadResult&gt;(){
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onSuccess</span><span class="hljs-params">(UploadTask.UploadResult uploadResult)</span> </span>{
+    }
+});
+</span></span></foreignObject></svg></code></pre>
+<footer>@devwithzachary</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-class="invert" class="invert" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--class:invert;">
+<header>Building Serverless Apps with AppGallery Connect</header>
+<h2>Listing Files</h2>
+<pre><code class="language-java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>Task&lt;ListResult&gt; listTask = storageManagement.getStorageReference(<span class="hljs-string">&quot;images/&quot;</span>).listAll();
+ListResult listResult = Tasks.await(listTask);
+StorageReference reference = listResult.getFileList().get(<span class="hljs-number">0</span>);
+Task&lt;FileMetadata&gt; metaTask = reference.getFileMetadata();
+</span></span></foreignObject></svg></code></pre>
+<h2>Delete Files</h2>
+<pre><code class="language-Java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>reference.delete();
+</span></span></foreignObject></svg></code></pre>
+<footer>@devwithzachary</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-class="invert" class="invert" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--class:invert;">
+<header>Building Serverless Apps with AppGallery Connect</header>
+<h2>Download File</h2>
+<pre><code class="language-Java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>StorageReference reference = storageManagement.getStorageReference(<span class="hljs-string">&quot;images/demo.jpg&quot;</span>);
+File file = <span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;path/images/test.jpg&quot;</span>);
+DownloadTask task = reference.getFile(file);
+task.addOnFailureListener(<span class="hljs-keyword">new</span> OnFailureListener(){
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onFailure</span><span class="hljs-params">(<span class="hljs-meta">@NonNull</span> Exception exception)</span> </span>{
+    }
+}).addOnSuccessListener(<span class="hljs-keyword">new</span> OnSuccessListener&lt;DownloadTask.DownloadResult&gt;(){
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onSuccess</span><span class="hljs-params">(DownloadTask.DownloadResult downloadResult)</span> </span>{
+    }
+});
+</span></span></foreignObject></svg></code></pre>
+<footer>@devwithzachary</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-class="invert" class="invert" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--class:invert;">
+<header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Cloud Hosting</h1>
 <p>Host static generated web apps and websites.<br />
 Version controlled by default.</p>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-class="invert" class="invert" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--class:invert;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-class="invert" class="invert" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--class:invert;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Cloud Functions</h1>
 <p>Supported Platforms:</p>

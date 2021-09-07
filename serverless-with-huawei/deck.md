@@ -199,6 +199,77 @@ Server SDKS:
 
 ---
 
+## Setup
+
+```Java
+AGCStorageManagement storageManagement = AGCStorageManagement.getInstance();
+AGConnectOptions cnOptions = new AGConnectOptionsBuilder().setRoutePolicy(AGCRoutePolicy.CHINA).build(this);
+AGConnectInstance cnInstance = AGConnectInstance.buildInstance(cnOptions);
+AGCStorageManagement storageManagement= AGCStorageManagement.getInstance(cnInstance, "bucket name");
+```
+
+```Java
+StorageReference reference = storageManagement.getStorageReference();
+//or
+StorageReference reference = storageManagement.getStorageReference("images/demo.jpg");
+//or
+StorageReference reference = storageManagement.getReferenceFromUrl(AGConnectInstance.getInstance(), "https://xxxxxx");
+```
+
+---
+
+## Upload
+
+```Java
+UploadTask task = reference.putFile(new File("path/images/test.jpg"));
+task.addOnFailureListener(new OnFailureListener(){
+    @Override
+    public void onFailure(@NonNull Exception exception) {
+    }
+}).addOnSuccessListener(new OnSuccessListener<UploadTask.UploadResult>(){
+    @Override
+    public void onSuccess(UploadTask.UploadResult uploadResult) {
+    }
+});
+```
+
+---
+
+## Listing Files
+
+```java
+Task<ListResult> listTask = storageManagement.getStorageReference("images/").listAll();
+ListResult listResult = Tasks.await(listTask);
+StorageReference reference = listResult.getFileList().get(0);
+Task<FileMetadata> metaTask = reference.getFileMetadata();
+```
+
+## Delete Files
+```Java
+reference.delete();
+```
+
+---
+
+## Download File
+
+```Java
+StorageReference reference = storageManagement.getStorageReference("images/demo.jpg");
+File file = new File("path/images/test.jpg");
+DownloadTask task = reference.getFile(file);
+task.addOnFailureListener(new OnFailureListener(){
+    @Override
+    public void onFailure(@NonNull Exception exception) {
+    }
+}).addOnSuccessListener(new OnSuccessListener<DownloadTask.DownloadResult>(){
+    @Override
+    public void onSuccess(DownloadTask.DownloadResult downloadResult) {
+    }
+});
+```
+
+---
+
 # Cloud Hosting
 
 Host static generated web apps and websites.
