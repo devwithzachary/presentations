@@ -274,6 +274,9 @@ task.addOnFailureListener(new OnFailureListener(){
 
 Host static generated web apps and websites.
 Version controlled by default.
+One-Click Deployment
+Access Accerlation via CDN
+Secure config free certificate
 
 ---
 
@@ -290,3 +293,18 @@ Cross Platform:
 - Flutter - ```apply plugin: 'com.huawei.agconnect'```
 - React Native - ```npm install @react-native-agconnect/cloudfunctions```
 - Cordova - ```cordova plugin add @cordova-plugin-agconnect/cloudfunctions```
+
+---
+
+# But wait there is more!
+
+Remote Configurations, App Messaging, App Linking, A/B Testing, Auth Service, Connect API, Crash, APM, Cloud Testing...
+
+---
+
+# Thank you!
+
+INSERT QR CODE FOR https://developer.huawei.com/consumer/en/agconnect/
+
+INSERT QR CODE FOR https://linktr.ee/devwithzachary
+
