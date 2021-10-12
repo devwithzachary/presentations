@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 header: 'Building Serverless Apps with AppGallery Connect'
 footer: '@devwithzachary'
 theme: default
