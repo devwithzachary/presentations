@@ -7,6 +7,16 @@ theme: default
 
 # Developer Advocacy: Or How I stopped worrying about public speaking and learned to love documentation.
 
+<!--
+
+Today we are going to breifly take a look at what Developer Advoacy is. 
+
+Why its important
+
+And why it might be ceraer to be interested in.
+
+-->
+
 ---
 
 # Who am I?
@@ -17,7 +27,7 @@ theme: default
 
 <!-- 
 
-Breif about me, why am i worth listening to?
+Breif about me,
 
 Android developer for 10 years after Uni
 
@@ -47,9 +57,11 @@ https://medium.com/@edshee/developer-relations-explained-c1cce2ea53a8
 <!--
 Where Software Development, Marketing and Product Management meet
 
-NOT a sales role
-
 Strong technical background. Marketing with a developer focus.
+
+Who you report to will often be a good indication of which element has the most focus. 
+
+Product - the SDK, tool, platform what ever you want developers to use
 -->
 
 ---
@@ -57,7 +69,7 @@ Strong technical background. Marketing with a developer focus.
 
 # DevRel - Developer Relations
 
-## Code, Content, Community
+## The three C's, code, content, community.
 
 <!-- 
 
@@ -65,9 +77,42 @@ But what do we actually do?
 
 The three C's, code, content, community.
 
-The Code. We developer sample applications, sample code snippets and projects to show case HOW to use a product.
+-->
+
+---
+
+
+# DevRel - Developer Relations
+
+## Code
+
+<!--
+
+The Code. DevRel developers sample applications, sample code snippets and projects to show case HOW to use a product.
+
+-->
+
+---
+
+
+# DevRel - Developer Relations
+
+## Content
+
+<!--
 
 The Content, produce documentation, Blog posts, videos, demo labs, presentations about the product.
+
+-->
+
+---
+
+
+# DevRel - Developer Relations
+
+## Community
+
+<!--
 
 The Community, help build and grow a community of developers, be active on social media, form discord, slack groups.
 
@@ -221,9 +266,7 @@ Do you have a passion for communities? Enjoy contributing to them? Presenting at
 
 Are you a Developer that likes to talk!?
 
-Are you the kind of preson that cant stick to one project for to long? Want to be writing a presentation one minute 
-
-Coding sample application the next? 
+Work on a wide range of projects.
 
 And of course do you want to have a real impact on a companys product, not just from a technical point of view?
 
@@ -271,11 +314,11 @@ Constant stream of new jobs, very few people currently in the market.
 <!--
 Of course one important thing Im sure everyone is wondering, how much can you earn?
 
-Well looking at a developer salary survery that was conducted during 2021 we can get some good ideas.
+Well looking at a developer relations salary survery that was conducted during 2021 we can get some good ideas.
 
 The US market is still the strongest on average with a range of $125k - $175k
 
-But agree the world entry, mid and senior level posistions will still see a very strong salary
+But agacrossree the world, entry, mid and senior level posistions will still see a very strong salary
 
 Entry-level average across the world $50k - $75k
 
@@ -285,7 +328,31 @@ Senior-level average across the world $125k - $175k
 
 With some senior positions reporting salaries well above $250k
 -->
+
 ---
+
+# What do I need?
+
+- Strong technical background, 3+ years
+- Passion for the product or space
+- Willingness to continue learning and improve on weaknesses
+
+<!--
+
+What do you need in to get into devrel
+
+A good technical background will get you straight into a mid level position. 
+
+Jr positions are about for those coming from another industry or out of the collage. But less about.
+
+A passion for the product or tech space will get you far, if your interested in the mobile space might be tough to get devrel for a cloud service or a web technology.
+
+Above all willingness to learn and improve. No one is good at everything starting out, find your weaknesses and improve them!
+
+-->
+
+---
+
 
 # Interested in More?
 
