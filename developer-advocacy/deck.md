@@ -13,7 +13,7 @@ theme: default
 
 - Lead Developer Advocate for Huawei's AppGallery Connect
 - Android Developer for 10 years
-- Move into DevRel and Never looked back!
+- Moved into DevRel and never looked back!
 
 <!-- 
 
@@ -38,7 +38,7 @@ Moved to lead and never looked back!
 
 # DevRel - Developer Relations
 
-## Where Where Marketing, Developers and Product Managers meet
+## Where Marketing, Developers and Product Managers meet
 
 https://medium.com/@edshee/developer-relations-explained-c1cce2ea53a8
 
