@@ -467,7 +467,6 @@ This one is certainly the easiest. Simply call the delete method and this will b
 
 Not of course this is a pretty dangourse task, make sure your 100% sure that the reference you have is the one you want to delete... no one wants to delete their whole bucket in one quick command!
 
-
 -->
 
 ---
@@ -476,7 +475,7 @@ Not of course this is a pretty dangourse task, make sure your 100% sure that the
 
 ```Java
 StorageReference reference = storageManagement.getStorageReference("images/demo.jpg");
-File file = new File("path/images/test.jpg");
+File file = new File();
 DownloadTask task = reference.getFile(file);
 task.addOnFailureListener(new OnFailureListener(){
     @Override
@@ -490,7 +489,17 @@ task.addOnFailureListener(new OnFailureListener(){
 ```
 
 <!--
-get reference to file, create file object, download file via task
+So what about actually downloading a file, well this is again pretty straight forward
+
+We get the reference to the file we want to download.
+
+Then we create a local file object, pass that file object in to the getFile method and run the download task.
+
+This will download the content of the storage reference and place it into the file object.
+
+From there you can then of course save the file locally or do what  ever else you need to do with that object.
+
+And thats the basic functionality from the cloud storage! As you can see this can be really useful when you just need to store binary data, perhaps user generated content like videos and images.
 -->
 
 ---
@@ -504,13 +513,20 @@ Access Accerlation via CDN
 Secure config free certificate
 
 <!--
-Simple cloud hosting for static web apps and websites.
 
-Use version controlling to easily roll back to older site versions
+The third offering in the serverless space is cloud hosting. 
 
-Deploy across sites easily and uses CDN for local accerlation.
+This provides simple web hosting in the cloud, perfect for a static web app or website that relates to your main mobile app. 
 
-Include ssl security and configuration for free
+It makes use of the same infastructure as the other services so you can benifit from local edge nodes to keep things speedy. 
+
+Everything is version controlled by default as well so its very easy to roll back to an older version of your site.
+
+And configuration free SSL certs are included at no cost.
+
+This service is certainly the  one I have the least to talk about.. because well it is what it says it is. Simple, easy cloud web hosting. 
+
+But it is a great addition to the line up as you can keep all of your hosting in the same place as your serverless app functionality.
 -->
 ---
 
@@ -530,9 +546,21 @@ Cross Platform:
 
 <!--
 
-Auto scalling, direct interaction with other services.
+Finally lets take a look at cloud functions, this is certainly my favourite because it really brings together all the other services. 
 
-Event triggers to fire code
+There are alot of cases where we need a server to do something based on some event. 
+When a user signs up we want an email to be sent to them.
+When a user does some action in the app we might need to send them a notification.
+
+Perhaps we need to updated some elements in the database when something happens. 
+
+Or maybe we just want to make use of more powerful servers to excute some code that would take a long time on a phone.
+
+This is where cloud functions can come in!
+
+Again the SDKs provided support a range of platforms, Android, iOS, Web as well as cross platform frameworks like flutter and react native.
+
+But importantly we can also trigger cloud functions via HTTP requests, so any platform that can make an HTTP request can actually make use of cloud functions.
 
 -->
 ---
@@ -544,23 +572,16 @@ Event triggers to fire code
 - Configurable Environment Variables
 
 <!--
-Code using Node.js run time and Javascript
 
-Web Base IDE included, or upload code as package
+Cloud functions are excuted using the Node.js run time, so its all javascript which makes for pretty intuative coding.
 
-Config environment variables as required
+There is a web based IDE to help build your functions and show what data is avaible to them. 
+
+And you can configure your own envrionment variables and input parameters.
+
+So its completely cusomisable which is really important.
 
 -->
-
----
-
-# Triggers
-
-- **HTTP**  HTTP request is made
-- **CLOUDDB**  Database data change event occurs
-- **AUTH**  User registers, signs in or out
-- **CLOUDSTORAGE** File uploaded or deleted
-- **CRON** Run at specified time
 
 ---
 
@@ -576,9 +597,9 @@ module.exports.myHandler = function(event, context, callback, logger) {
 
 <!--
 
-Most basic example of functions
+So heres a super basic example of a function, we are taking the event object, logging it and sending back some basic json success message.
 
-event: JSON-format event object passed by the caller.
+event: JSON-format event object passed by the caller, depending on the trigger this will contain details about that trigger
 
 context: function running context object. It encapsulates the log API, callback API, and environment variable object env.
 
@@ -587,6 +608,16 @@ callback: event handling result.
 logger: logs.
 
 -->
+
+---
+
+# Triggers
+
+- **HTTP**  HTTP request is made
+- **CLOUDDB**  Database data change event occurs
+- **AUTH**  User registers, signs in or out
+- **CLOUDSTORAGE** File uploaded or deleted
+- **CRON** Run at specified time
 
 ---
 

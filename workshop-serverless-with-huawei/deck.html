@@ -30,11 +30,6 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Useful for Mobile Development, but why?</h1>
-<footer>@devwithzachary</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
-<header>Building Serverless Apps with AppGallery Connect</header>
-<h1>Useful for Mobile Development, but why?</h1>
 <ul>
 <li>Low overhead</li>
 <li>Free tiers</li>
@@ -42,6 +37,16 @@
 <li>Automatic Scaling</li>
 <li>Focus on App Development</li>
 <li>Prototyping</li>
+</ul>
+<footer>@devwithzachary</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+<header>Building Serverless Apps with AppGallery Connect</header>
+<h1>When serverless is a bad idea</h1>
+<ul>
+<li>Custom hardware requirements</li>
+<li>Specific security/regulatory requirements</li>
+<li>Dependant on a 3rd party</li>
 </ul>
 <footer>@devwithzachary</footer>
 </section>
@@ -218,6 +223,11 @@ AGConnectOptions cnOptions = <span class="hljs-keyword">new</span> AGConnectOpti
 AGConnectInstance cnInstance = AGConnectInstance.buildInstance(cnOptions);
 AGCStorageManagement storageManagement= AGCStorageManagement.getInstance(cnInstance, <span class="hljs-string">&quot;bucket name&quot;</span>);
 </span></span></foreignObject></svg></code></pre>
+<footer>@devwithzachary</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+<header>Building Serverless Apps with AppGallery Connect</header>
+<h2>Get</h2>
 <pre><code class="language-Java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>StorageReference reference = storageManagement.getStorageReference();
 <span class="hljs-comment">//or</span>
 StorageReference reference = storageManagement.getStorageReference(<span class="hljs-string">&quot;images/demo.jpg&quot;</span>);
@@ -226,7 +236,7 @@ StorageReference reference = storageManagement.getReferenceFromUrl(AGConnectInst
 </span></span></foreignObject></svg></code></pre>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h2>Upload</h2>
 <pre><code class="language-Java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>UploadTask task = reference.putFile(<span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;path/images/test.jpg&quot;</span>));
@@ -242,24 +252,18 @@ task.addOnFailureListener(<span class="hljs-keyword">new</span> OnFailureListene
 </span></span></foreignObject></svg></code></pre>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
-<h2>Listing Files</h2>
-<pre><code class="language-java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>Task&lt;ListResult&gt; listTask = storageManagement.getStorageReference(<span class="hljs-string">&quot;images/&quot;</span>).listAll();
-ListResult listResult = Tasks.await(listTask);
-StorageReference reference = listResult.getFileList().get(<span class="hljs-number">0</span>);
-Task&lt;FileMetadata&gt; metaTask = reference.getFileMetadata();
-</span></span></foreignObject></svg></code></pre>
 <h2>Delete Files</h2>
 <pre><code class="language-Java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>reference.delete();
 </span></span></foreignObject></svg></code></pre>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h2>Download File</h2>
 <pre><code class="language-Java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>StorageReference reference = storageManagement.getStorageReference(<span class="hljs-string">&quot;images/demo.jpg&quot;</span>);
-File file = <span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;path/images/test.jpg&quot;</span>);
+File file = <span class="hljs-keyword">new</span> File();
 DownloadTask task = reference.getFile(file);
 task.addOnFailureListener(<span class="hljs-keyword">new</span> OnFailureListener(){
     <span class="hljs-meta">@Override</span>
@@ -273,7 +277,7 @@ task.addOnFailureListener(<span class="hljs-keyword">new</span> OnFailureListene
 </span></span></foreignObject></svg></code></pre>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Cloud Hosting</h1>
 <p>Host static generated web apps and websites.<br />
@@ -283,7 +287,7 @@ Access Accerlation via CDN<br />
 Secure config free certificate</p>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Cloud Functions</h1>
 <p>Supported Platforms:</p>
@@ -300,25 +304,13 @@ Secure config free certificate</p>
 </ul>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Create Functions</h1>
 <ul>
 <li>Node.js run time</li>
 <li>Simple Web based IDE</li>
 <li>Configurable Environment Variables</li>
-</ul>
-<footer>@devwithzachary</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
-<header>Building Serverless Apps with AppGallery Connect</header>
-<h1>Triggers</h1>
-<ul>
-<li><strong>HTTP</strong>  HTTP request is made</li>
-<li><strong>CLOUDDB</strong>  Database data change event occurs</li>
-<li><strong>AUTH</strong>  User registers, signs in or out</li>
-<li><strong>CLOUDSTORAGE</strong> File uploaded or deleted</li>
-<li><strong>CRON</strong> Run at specified time</li>
 </ul>
 <footer>@devwithzachary</footer>
 </section>
@@ -335,6 +327,18 @@ Secure config free certificate</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
+<h1>Triggers</h1>
+<ul>
+<li><strong>HTTP</strong>  HTTP request is made</li>
+<li><strong>CLOUDDB</strong>  Database data change event occurs</li>
+<li><strong>AUTH</strong>  User registers, signs in or out</li>
+<li><strong>CLOUDSTORAGE</strong> File uploaded or deleted</li>
+<li><strong>CRON</strong> Run at specified time</li>
+</ul>
+<footer>@devwithzachary</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+<header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Event Object Examples</h1>
 <p>HTTP trigger</p>
 <pre><code class="language-JSON"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>{
@@ -348,7 +352,7 @@ Secure config free certificate</p>
 </span></span></foreignObject></svg></code></pre>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Event Object Examples</h1>
 <p>CLOUDDB data deleted</p>
@@ -365,7 +369,7 @@ Secure config free certificate</p>
 </span></span></foreignObject></svg></code></pre>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Example</h1>
 <pre><code class="language-Javascript"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> myHandler = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event, context, callback, logger</span>) </span>{
@@ -409,7 +413,7 @@ Secure config free certificate</p>
 </span></span></foreignObject></svg></code></pre>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Function call from Apps</h1>
 <pre><code class="language-Java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>AGConnectFunction function  = AGConnectFunction.getInstance();
@@ -417,7 +421,7 @@ function.wrap(<span class="hljs-string">&quot;myhandlerxxxx-$latest&quot;</span>
 </span></span></foreignObject></svg></code></pre>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Function call from Apps</h1>
 <pre><code class="language-Java"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">getWeek</span><span class="hljs-params">(String date)</span> </span>{
@@ -445,20 +449,20 @@ function.wrap(<span class="hljs-string">&quot;myhandlerxxxx-$latest&quot;</span>
 </span></span></foreignObject></svg></code></pre>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>But wait there is more!</h1>
 <p>Remote Configurations, App Messaging, App Linking, A/B Testing, Auth Service, Connect API, Crash, APM, Cloud Testing...</p>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Thank you!</h1>
 <p><img src="images/huawei.svg" alt="" style="width:200px;" /> <img src="images/huawei-dev-qrcode.png" alt="" style="width:300px;" /></p>
 <p><a href="https://developer.huawei.com/consumer/en/agconnect">https://developer.huawei.com/consumer/en/agconnect</a></p>
 <footer>@devwithzachary</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-header="Building Serverless Apps with AppGallery Connect" data-footer="@devwithzachary" data-theme="default" style="--header:Building Serverless Apps with AppGallery Connect;--footer:@devwithzachary;--theme:default;">
 <header>Building Serverless Apps with AppGallery Connect</header>
 <h1>Thank you!</h1>
 <p><img src="images/me.jpg" alt="" style="width:200px;" /> <img src="images/qr-code.png" alt="" style="width:300px;" /></p>
@@ -466,76 +470,186 @@ function.wrap(<span class="hljs-string">&quot;myhandlerxxxx-$latest&quot;</span>
 <footer>@devwithzachary</footer>
 </section>
 <script>!function(){"use strict";const t="marpitSVGPolyfill:setZoomFactor,",e=Symbol();let r,o;function n(n){const i="object"==typeof n&&n.target||document,a="object"==typeof n?n.zoom:n;window[e]||(Object.defineProperty(window,e,{configurable:!0,value:!0}),window.addEventListener("message",(({data:e,origin:r})=>{if(r===window.origin)try{if(e&&"string"==typeof e&&e.startsWith(t)){const[,t]=e.split(","),r=Number.parseFloat(t);Number.isNaN(r)||(o=r)}}catch(t){console.error(t)}})));let l=!1;Array.from(i.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,n,i,s;t.style.transform||(t.style.transform="translateZ(0)");const c=a||o||t.currentScale||1;r!==c&&(r=c,l=c);const d=t.getBoundingClientRect(),{length:u}=t.children;for(let r=0;r<u;r+=1){const o=t.children[r],a=o.getScreenCTM();if(a){const t=null!==(n=null===(e=o.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==n?n:0,r=null!==(s=null===(i=o.y)||void 0===i?void 0:i.baseVal.value)&&void 0!==s?s:0,l=o.firstElementChild,{style:u}=l;u.transformOrigin||(u.transformOrigin=`${-t}px ${-r}px`),u.transform=`scale(${c}) matrix(${a.a}, ${a.b}, ${a.c}, ${a.d}, ${a.e-d.left}, ${a.f-d.top}) translateZ(0.0001px)`}}})),!1!==l&&Array.from(i.querySelectorAll("iframe"),(({contentWindow:e})=>{null==e||e.postMessage(`${t}${l}`,"null"===window.origin?"*":window.origin)}))}r=1,o=void 0;const i=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function a({once:t=!1,target:e=document}={}){const r="Apple Computer, Inc."===navigator.vendor?[n]:[];let o=!t;const a=()=>{for(const t of r)t({target:e});!function(t=document){Array.from(t.querySelectorAll('svg[data-marp-fitting="svg"]'),(t=>{var e;const r=t.firstChild,o=r.firstChild,{scrollWidth:n,scrollHeight:a}=o;let l,s=1;if(t.hasAttribute("data-marp-fitting-code")&&(l=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(s=e)}const c=Math.max(n,s),d=Math.max(a,1),u=`0 0 ${c} ${d}`;i(r,"width",`${c}`),i(r,"height",`${d}`),i(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),i(t,"viewBox",u)&&t.classList.toggle("__reflow__")}))}(e),o&&window.requestAnimationFrame(a)};return a(),()=>{o=!1}}const l=Symbol(),s=document.currentScript;((t=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(t[l])return t[l];const e=a({target:t}),r=()=>{e(),delete t[l]};Object.defineProperty(t,l,{configurable:!0,value:r})})(s?s.getRootNode():document)}();
-</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>What is serverless?
-- Joke about no server emoji</p></div><div class="bespoke-marp-note" data-index="1" tabindex="0"><p>- Serverless is the next step on from cloud computing
+</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="0" tabindex="0"><p>Hello everyone, I'm Zachary Powell, lead developer advocate for Huawei's AppGallery Connect.
 
-- Services are provided directly by company via some form of API or CLI/GUI interface
+Today we are going to take a deep dive into developing serverless applications, with the help of AppGallery Connect.
 
-- All hardware and software is managed for you, no need to worry about typical devops tasks</p></div><div class="bespoke-marp-note" data-index="3" tabindex="0"><p>Normal advantages for anyone using serverless, low overhead, free teirs, secure, scaling
+Because this is a workshop today while I do have a full slide deck and loads we can look at im more than happy at any time to stop and answer any questions. 
 
-This lets developer focus on app development.
+SO please if you do have questions stick your hand up and we will get them answered.</p></div><div class="bespoke-marp-note" data-index="1" tabindex="0"><p>But before we get into what Huawei offers, what actually is serverless... What do we mean when we talk about serverless services.
 
-Really great for larger companies to when they want to prototype something new.</p></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>Huawei offers a wide range of services geared towards mobile development.
+One way to think about it is something like cloud computer plus plus. 
 
-Highlights from top four</p></div><div class="bespoke-marp-note" data-index="5" tabindex="0"><p>on-demand autoscaling
+If cloud computing removes the need for a developer to worry about the physical hardware. Then serverless removes the need for a developer to worry about the software.
 
-Bolsters your apps with real-time, device-cloud data synchronization, multi-device data synergy, and offline data availability.</p></div><div class="bespoke-marp-note" data-index="6" tabindex="0"><p>Examples in Java but just as easy in other platforms Languages
+They are simply being provided direct access to some service via an API or SDK. Direct access to storage, database, processing power. Completely abstracted from the software thats actually supporting that service, the servers operating system etc.
 
-Initialise CloudDB at app startUp
+There are lots of offerings on the market, all the big tech comapnies are in this space, AWS lambda, Firebase, Azure.. and more recently Huawei!</p></div><div class="bespoke-marp-note" data-index="2" tabindex="0"><p>So why would serverless functionality be useful? Particularly why as mobile developers might we want to use these services?
 
-Get an instance and create your objects via provided object helpers</p></div><div class="bespoke-marp-note" data-index="7" tabindex="0"><p>Simple web portal with GUI to setup your Objects
+Well alot of the benifits match any type of application, web, mobile or what ever else that requires some kind of internet connected back end.
+
+Serverless can be very useful when your looking to build something very quickly. For example you want to prototype a new idea or project. Using serverless means you dont have to worry about setting up a backend server, even a local test one. 
+
+It means you can just directly use the services straight away, consume the API or use the SDK and your good to go.
+
+Alot of these systems also have some free tier, more often than enough this will be perfect for prototyping, who doesnt love having a backend to their application for free!
+
+So you have built your prototype, it was super successful, people loved it and now you want to actually build the application.
+
+Again serverless can be super useful here! 
+Because of the abstraction serverless becomes automaticly scaling, you need more power, more space what ever it might be and the service will handle that! 
+
+If you go viral over night theres no worry that the backend to your system will crash!
+
+Finally above all else it means you dont have to be a sys admin, you dont need to be a security expert, you dont need to learn backend skills at all. 
+
+You can focus on what you enjoy, app development!</p></div><div class="bespoke-marp-note" data-index="3" tabindex="0"><p>Of course if we are talking about when serverless IS useful, we should also give a mention to those times when its not useful.
+
+As cloud computing in general, because you are putting abstraction layers between your code and the actually hardware, if you have specific hardware requirement. Some kind of custom hardware or something else that isn't consider part of a normal server it might be very differecult to implment this into a serverless architecture.
+
+Perhaps your process very sensative data or run an application that needs to meet certain regulatory requirements. Its often easier to manage this when you are using your own hardware.
+
+Finally there is the big one, which in the past year has been seen to be an issue. You are dependant on a 3rd party. If their service goes down, unless you have a backend system in place there is very little you can do.
+
+We have seen this when the likes of AWS go down taking out what feels like half the internet with it. 
+
+If you need to have backups certainly the money saved is lost. So if your system is highly dependant on rock solid up time, if 99.9% up time just isnt enough for you, then maybe serverless isn't right for you.</p></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>So, we have now decided that serverless would be a great addition to the project your working on. It ticks all the boxes for what you need, why might Huawei's offering be a good choice?
+
+What sets these services apart is the fact they are designed for mobile first. But retain support for web platforms in alot of cases. They are designed to work well with what ever you already have for a backend or to be a complete backend replacement.
+
+The four main services we will look at today are, clodu db, cloud storage, cloud hosting and cloud functions.
+
+There are plenty of other services that might help build your application, a total of over 70 in fact. But these four make up the core serverless offering.</p></div><div class="bespoke-marp-note" data-index="5" tabindex="0"><p>First up we have CloudDB,
+A full serverless database that supports a great range of functionality you would expect from a serverless database.
+Full on demand autoscaling will make sure your queries and results are always snappy.
+
+The provided SDK also allows you to retain ondevice companies of data easily, so your application can continue to function even with no internet connection.
+
+And like i mentioned whats really great is just how many platforms are supported! 
+
+We provide support for Android, iOS, Web, hybrid frameworks like flutter and react native. Plus support for server side java and javascript applications.
+
+There is even third party support for Unity if your looking to implment this into a game!</p></div><div class="bespoke-marp-note" data-index="6" tabindex="0"><p>So lets take a look at some examples of how we might use this service. The examples are in Java and written for an Android app but its just as easy to use in other platforms and languages.
+
+Lets start by initialising CloudDB itself are app startup.
+
+From here we can grab an instance of the cloudDB and initlise the objects using the provided Object helper.</p></div><div class="bespoke-marp-note" data-index="7" tabindex="0"><p>But how do we create those objects in the first place? Well we can do so in two ways, either via the web portal within AppGallery Connect Console. 
 
 From here also setup your cloud DB zones, different physical locations to store data separately (china, germany, russia)
 
-Also view and query data from here</p></div><div class="bespoke-marp-note" data-index="8" tabindex="0"><p>Or import your config via JSON</p></div><div class="bespoke-marp-note" data-index="9" tabindex="0"><p>Export your objects and java classes are generated for you and provided for download</p></div><div class="bespoke-marp-note" data-index="10" tabindex="0"><p>Example of upserting (insert or update) a BookInfo object instance
+You can add new objects types, and also view the data entries for those types, create query reports etc.</p></div><div class="bespoke-marp-note" data-index="8" tabindex="0"><p>But we are developers after all! We like code! So the other option is these object types can be created using a JSON format imported into clouddb, heres a simple example of one object type which we have called book info.
 
-Returns number of successful inserts
+You can see it has in this case just one field called id, we have set it to the primary key and its an integer.
 
-executeUpsert can also take a list of Objects</p></div><div class="bespoke-marp-note" data-index="11" tabindex="0"><p>How we might query and process results from the database
+Of course we might have many fields for one object type and this can all be build up as you would expect as a json list. 
 
-Create query task, supports expected where logic, in this instance just getting all.
+But once these types are created, either via the GUI or the JSON import we can then use the consoles export functionality to produce the Object definitions for what ever languages we are using.</p></div><div class="bespoke-marp-note" data-index="9" tabindex="0"><p>So for example here we have selected Java and exported the Java objects, heres a snipet of what the Book Info object might not look. Its extending the clouddb zone object and has a number of fields some of which we might use anotation to define default values etc.
 
-Policy to query either the cloud, local copy or either
+This is all exported for you so you can just directly use these object classes in your code. You shouldn't need to make any changes directly to them.</p></div><div class="bespoke-marp-note" data-index="10" tabindex="0"><p>So how do we go about doing some basic functions with the clouddb? 
 
-Get back a Data snapshot
+Lets start with how we might write an object to the database. 
 
-Process this in processQueryResult by iterating over snapshot and do some processing with that BookInfo object</p></div><div class="bespoke-marp-note" data-index="12" tabindex="0"><p>Works with Auth Service, and utilizes a declarative security model to allow only authenticated accesses.
+Here we use the upsert, that is insert or update method to create a task.
 
-Keeps download and upload speeds stable with edge nodes, resumable transfers, and network acceleration.</p></div><div class="bespoke-marp-note" data-index="13" tabindex="0"><p>Get a storage instance, configure your preferred routing.
+We are passing that task a book info object, but it could also be a list of objects.
 
-Get bucket
+And on return we get a count of the number of objects successfully upserted.
 
-Three ways to get storage references.
+So when we are using htis method what we are doing is saying, if this object with its give primary key already exists in the database we will just update the values of the object.
 
-Get the whole bucket
+Otherwise if its a new object we don't know about we are going to go ahead and insert that into the database.</p></div><div class="bespoke-marp-note" data-index="11" tabindex="0"><p>Ok so we have now upserted some objects into the database, stuff has been created and now we want to query that stuff!
 
-Get a specific file/path
+This of course is the other big thing you need to be able to do with a database, no point being able to store the data if you cant then get it back later.
 
-Or get reference from a url of a file</p></div><div class="bespoke-marp-note" data-index="14" tabindex="0"><p>Upload a file to the reference you have got, use a specific file to upload to that file or overwrite it.
+SO here in the queryAllBooks method we can see that we create a query task, we use the execute query method which takes two arguments. 
 
-&quot;path/images/test.jpg&quot; - local file path accepts file objects</p></div><div class="bespoke-marp-note" data-index="15" tabindex="0"><p>If getting a reference of a folder you can list files in that folder. Then get the metadata about the specific Files
+The first is the query itself, for the most basic instance we are simply asking for all the objects that are of the object type Book info. 
 
-Deleting is super easy, so long as you have the permission to do it ;)</p></div><div class="bespoke-marp-note" data-index="16" tabindex="0"><p>get reference to file, create file object, download file via task</p></div><div class="bespoke-marp-note" data-index="17" tabindex="0"><p>Simple cloud hosting for static web apps and websites.
+But we could of course make a more complex query, filter by a field or a range etc. 
 
-Use version controlling to easily roll back to older site versions
+Now the second permaiter is where we actually want to query from, we wont be going into it today but as i breifly mentioned you can keep a cache of data locally within the application. So here you can choose to query only from the cloud, from the cloud but use the cache if that fails or directly from the cache!
 
-Deploy across sites easily and uses CDN for local accerlation.
+Then the task is run and in the happy path we get back a snapshot, this snapshot is what contains all the data that has been queried for at that specific time that the query was run.
 
-Include ssl security and configuration for free</p></div><div class="bespoke-marp-note" data-index="18" tabindex="0"><p>Auto scalling, direct interaction with other services.
+We can then use a cursor to move  over the items in that snapshot and pull back out the Book info objects.
 
-Event triggers to fire code</p></div><div class="bespoke-marp-note" data-index="19" tabindex="0"><p>Code using Node.js run time and Javascript
+Here we are building up a list but we can of course then just process them however we want.
 
-Web Base IDE included, or upload code as package
+And thats just a very quick look at how we can go about setting up the CloudDB, there is of course plenty more you can do, delete objects, more complex queries, caching the data etc.</p></div><div class="bespoke-marp-note" data-index="12" tabindex="0"><p>Next up we have cloud storage, this provides an easy way for your to store binary data in the cloud, to be quickly accessible from your application.
 
-Config environment variables as required</p></div><div class="bespoke-marp-note" data-index="21" tabindex="0"><p>Most basic example of functions
+As you would expect Cloud storage offers stable uploads and downlaods by utlising a network of edge nodes and offers resumable file transfers for when.
 
-event: JSON-format event object passed by the caller.
+One other interesting point is that it can work alongside the auth service to provide an out of the box authentication system to restrict access to files.
+
+Again as you can expect a range of platforms are supported, both mobile on Android and iOS as well as web via javascript and server SDKs with java or javascript.</p></div><div class="bespoke-marp-note" data-index="13" tabindex="0"><p>Setup is nice and straight forward, we get an instance of the storage manager.
+
+Then we set the routing policy, there are a number of seperate storage locations avaible around the world. This allows you to seperate data into specific regions, we currently have China, Germnay, Russia and Singapore.
+
+Once you select your location you can then grab an instance of a specific bucket and your good to go. You can of course have seperate buckets of data for seperate purposes!</p></div><div class="bespoke-marp-note" data-index="14" tabindex="0"><p>Now that we have a bucket as the storage manager we can then get a specific reference.
+
+This can be done in three different ways, we can either get the whole bucket, all the objects are a specific uri which might be one specific file or a directory of many files.
+
+Or we can get a reference that relates to a specific URL.</p></div><div class="bespoke-marp-note" data-index="15" tabindex="0"><p>Now that we have a storage reference we can do a number of things with that reference.
+
+Firstly we can upload a file to that reference, this is where just getting the bucket reference or a directory reference can be handy. But you can also upload a file to a specific uri if you want to overwrite that file.
+
+Here we use the put file method, which takes a Java file object, in this case we are assuming the file we want to upload is at the path path/images/test.jpg but it might be a file object created from a photo you have just taken or a file taken from the storage system in a more android spefic way.
+
+Again we can use a on failure and on success listners to confirm if the upload was successful.</p></div><div class="bespoke-marp-note" data-index="16" tabindex="0"><p>We have no uploaded a file to the storage reference, well what if we want to delete that file?
+
+This one is certainly the easiest. Simply call the delete method and this will be handled.
+
+Not of course this is a pretty dangourse task, make sure your 100% sure that the reference you have is the one you want to delete... no one wants to delete their whole bucket in one quick command!</p></div><div class="bespoke-marp-note" data-index="17" tabindex="0"><p>So what about actually downloading a file, well this is again pretty straight forward
+
+We get the reference to the file we want to download.
+
+Then we create a local file object, pass that file object in to the getFile method and run the download task.
+
+This will download the content of the storage reference and place it into the file object.
+
+From there you can then of course save the file locally or do what  ever else you need to do with that object.
+
+And thats the basic functionality from the cloud storage! As you can see this can be really useful when you just need to store binary data, perhaps user generated content like videos and images.</p></div><div class="bespoke-marp-note" data-index="18" tabindex="0"><p>The third offering in the serverless space is cloud hosting. 
+
+This provides simple web hosting in the cloud, perfect for a static web app or website that relates to your main mobile app. 
+
+It makes use of the same infastructure as the other services so you can benifit from local edge nodes to keep things speedy. 
+
+Everything is version controlled by default as well so its very easy to roll back to an older version of your site.
+
+And configuration free SSL certs are included at no cost.
+
+This service is certainly the  one I have the least to talk about.. because well it is what it says it is. Simple, easy cloud web hosting. 
+
+But it is a great addition to the line up as you can keep all of your hosting in the same place as your serverless app functionality.</p></div><div class="bespoke-marp-note" data-index="19" tabindex="0"><p>Finally lets take a look at cloud functions, this is certainly my favourite because it really brings together all the other services. 
+
+There are alot of cases where we need a server to do something based on some event. 
+When a user signs up we want an email to be sent to them.
+When a user does some action in the app we might need to send them a notification.
+
+Perhaps we need to updated some elements in the database when something happens. 
+
+Or maybe we just want to make use of more powerful servers to excute some code that would take a long time on a phone.
+
+This is where cloud functions can come in!
+
+Again the SDKs provided support a range of platforms, Android, iOS, Web as well as cross platform frameworks like flutter and react native.
+
+But importantly we can also trigger cloud functions via HTTP requests, so any platform that can make an HTTP request can actually make use of cloud functions.</p></div><div class="bespoke-marp-note" data-index="20" tabindex="0"><p>Cloud functions are excuted using the Node.js run time, so its all javascript which makes for pretty intuative coding.
+
+There is a web based IDE to help build your functions and show what data is avaible to them. 
+
+And you can configure your own envrionment variables and input parameters.
+
+So its completely cusomisable which is really important.</p></div><div class="bespoke-marp-note" data-index="21" tabindex="0"><p>So heres a super basic example of a function, we are taking the event object, logging it and sending back some basic json success message.
+
+event: JSON-format event object passed by the caller, depending on the trigger this will contain details about that trigger
 
 context: function running context object. It encapsulates the log API, callback API, and environment variable object env.
 
 callback: event handling result.
 
-logger: logs.</p></div><div class="bespoke-marp-note" data-index="22" tabindex="0"><p>Path for generating a trigger URL.
+logger: logs.</p></div><div class="bespoke-marp-note" data-index="23" tabindex="0"><p>Path for generating a trigger URL.
 
 Trigger request mode. Currently, HTTP triggers support only the POST method.
 
@@ -545,16 +659,16 @@ Query parameter in key-value pairs. Multiple pairs are allowed.
 
 Request body, which can be customized. The request body is in JSON format and cannot exceed 4 MB.
 
-Indicates whether the message body is a Boolean value encoded using Base64.</p></div><div class="bespoke-marp-note" data-index="23" tabindex="0"><p>Primary key information about the deleted data.
+Indicates whether the message body is a Boolean value encoded using Base64.</p></div><div class="bespoke-marp-note" data-index="24" tabindex="0"><p>Primary key information about the deleted data.
 
 Table name.
 
 Storage zone name.
 
 
-Operation type.</p></div><div class="bespoke-marp-note" data-index="24" tabindex="0"><p>Example function where we take a number as a year and check to see if its a leap year.
+Operation type.</p></div><div class="bespoke-marp-note" data-index="25" tabindex="0"><p>Example function where we take a number as a year and check to see if its a leap year.
 
-Returning a string as the result body</p></div><div class="bespoke-marp-note" data-index="25" tabindex="0"><p>Simple method to call a function that requires no input and doesn't care about the output</p></div><div class="bespoke-marp-note" data-index="26" tabindex="0"><p>More advanced example, here we pass a hasmap of parameters
+Returning a string as the result body</p></div><div class="bespoke-marp-note" data-index="26" tabindex="0"><p>Simple method to call a function that requires no input and doesn't care about the output</p></div><div class="bespoke-marp-note" data-index="27" tabindex="0"><p>More advanced example, here we pass a hasmap of parameters
 
 Then we used the complete listener to get the result back</p></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@1.5.2/lib/bespoke.js.LICENSE.txt */
 !function(){"use strict";const e=document.body,t=(...e)=>history.replaceState(...e),n="presenter",r="next",o=["",n,r],a="data-bespoke-marp-",i=(e,{protocol:t,host:n,pathname:r,hash:o}=location)=>{const a=e.toString();return`${t}//${n}${r}${a?"?":""}${a}${o}`},s=()=>e.dataset.bespokeView,l=e=>new URLSearchParams(location.search).get(e),c=(e,n={})=>{var r;const o={location,setter:t,...n},a=new URLSearchParams(o.location.search);for(const t of Object.keys(e)){const n=e[t];"string"==typeof n?a.set(t,n):a.delete(t)}try{o.setter({...null!==(r=window.history.state)&&void 0!==r?r:{}},"",i(a,o.location))}catch(e){console.error(e)}},d=(()=>{const e="bespoke-marp";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(e){return!1}})(),f=e=>{try{return localStorage.getItem(e)}catch(e){return null}},u=(e,t)=>{try{return localStorage.setItem(e,t),!0}catch(e){return!1}},m=e=>{try{return localStorage.removeItem(e),!0}catch(e){return!1}},g=(e,t)=>{const n="aria-hidden";t?e.setAttribute(n,"true"):e.removeAttribute(n)},p=e=>{e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach((e=>e.classList.add("bespoke-marp-slide"))),e.on("activate",(t=>{const n="bespoke-marp-active",r=t.slide,o=r.classList,a=!o.contains(n);if(e.slides.forEach((e=>{e.classList.remove(n),g(e,!0)})),o.add(n),g(r,!1),a){const e=`${n}-ready`;o.add(e),document.body.clientHeight,o.remove(e)}}))},v=e=>{let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map((e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]))});const r=r=>void 0!==e.fragments[t][n+r],o=(r,o)=>{t=r,n=o,e.fragments.forEach(((e,t)=>{e.forEach(((e,n)=>{if(null==e)return;const i=t<r||t===r&&n<=o;e.setAttribute(`${a}fragment`,(i?"":"in")+"active");const s=`${a}current-fragment`;t===r&&n===o?e.setAttribute(s,"current"):e.removeAttribute(s)}))})),e.fragmentIndex=o;const i={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:o};e.fire("fragment",i)};e.on("next",(({fragment:a=!0})=>{if(a){if(r(1))return o(t,n+1),!1;const a=t+1;e.fragments[a]&&o(a,0)}else{const r=e.fragments[t].length;if(n+1<r)return o(t,r-1),!1;const a=e.fragments[t+1];a&&o(t+1,a.length-1)}})),e.on("prev",(({fragment:a=!0})=>{if(r(-1)&&a)return o(t,n-1),!1;const i=t-1;e.fragments[i]&&o(i,e.fragments[i].length-1)})),e.on("slide",(({index:t,fragment:n})=>{let r=0;if(void 0!==n){const o=e.fragments[t];if(o){const{length:e}=o;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}o(t,r)})),o(0,0)},h=document,y=()=>!(!h.fullscreenEnabled&&!h.webkitFullscreenEnabled),x=()=>!(!h.fullscreenElement&&!h.webkitFullscreenElement),w=e=>{e.fullscreen=()=>{y()&&(async()=>{return x()?null===(e=h.exitFullscreen||h.webkitExitFullscreen)||void 0===e?void 0:e.call(h):((e=h.body)=>{var t;return null===(t=e.requestFullscreen||e.webkitRequestFullscreen)||void 0===t?void 0:t.call(e)})();var e})()},document.addEventListener("keydown",(t=>{"f"!==t.key&&"F11"!==t.key||t.altKey||t.ctrlKey||t.metaKey||!y()||(e.fullscreen(),t.preventDefault())}))},b="bespoke-marp-inactive",k=(e=2e3)=>({parent:t,fire:n})=>{const r=t.classList,o=e=>n(`marp-${e?"":"in"}active`);let a;const i=()=>{a&&clearTimeout(a),a=setTimeout((()=>{r.add(b),o()}),e),r.contains(b)&&(r.remove(b),o(!0))};for(const e of["mousedown","mousemove","touchend"])document.addEventListener(e,i);setTimeout(i,0)},E=["AUDIO","BUTTON","INPUT","SELECT","TEXTAREA","VIDEO"],L=e=>{e.parent.addEventListener("keydown",(e=>{if(!e.target)return;const t=e.target;(E.includes(t.nodeName)||"true"===t.contentEditable)&&e.stopPropagation()}))},$=e=>{window.addEventListener("load",(()=>{for(const t of e.slides){const e=t.querySelector("[data-marp-fitting]")?"":"hideable";t.setAttribute(`${a}load`,e)}}))},P=({interval:e=250}={})=>t=>{document.addEventListener("keydown",(e=>{if(" "===e.key&&e.shiftKey)t.prev();else if("ArrowLeft"===e.key||"ArrowUp"===e.key||"PageUp"===e.key)t.prev({fragment:!e.shiftKey});else if(" "!==e.key||e.shiftKey)if("ArrowRight"===e.key||"ArrowDown"===e.key||"PageDown"===e.key)t.next({fragment:!e.shiftKey});else if("End"===e.key)t.slide(t.slides.length-1,{fragment:-1});else{if("Home"!==e.key)return;t.slide(0)}else t.next();e.preventDefault()}));let n,r,o=0;t.parent.addEventListener("wheel",(a=>{let i=!1;const s=(e,t)=>{e&&(i=i||((e,t)=>((e,t)=>{const n="X"===t?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]})(e,t)&&((e,t)=>{const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r})(getComputedStyle(e),t))(e,t)),(null==e?void 0:e.parentElement)&&s(e.parentElement,t)};if(0!==a.deltaX&&s(a.target,"X"),0!==a.deltaY&&s(a.target,"Y"),i)return;a.preventDefault();const l=Math.sqrt(a.deltaX**2+a.deltaY**2);if(void 0!==a.wheelDelta){if(void 0===a.webkitForce&&Math.abs(a.wheelDelta)<40)return;if(a.deltaMode===a.DOM_DELTA_PIXEL&&l<4)return}else if(a.deltaMode===a.DOM_DELTA_PIXEL&&l<12)return;r&&clearTimeout(r),r=setTimeout((()=>{n=0}),e);const c=Date.now()-o<e,d=l<=n;if(n=l,c||d)return;let f;(a.deltaX>0||a.deltaY>0)&&(f="next"),(a.deltaX<0||a.deltaY<0)&&(f="prev"),f&&(t[f](),o=Date.now())}))},S=(e=".bespoke-marp-osc")=>{const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[${a}osc=${JSON.stringify(e)}]`).forEach(n)};return y()||n("fullscreen",(e=>e.style.display="none")),d||n("presenter",(e=>{e.disabled=!0,e.title="Presenter view is disabled due to restricted localStorage."})),e=>{t.addEventListener("click",(t=>{if(t.target instanceof HTMLElement){const{bespokeMarpOsc:n}=t.target.dataset;n&&t.target.blur();const r={fragment:!t.shiftKey};"next"===n?e.next(r):"prev"===n?e.prev(r):"fullscreen"===n?null==e||e.fullscreen():"presenter"===n&&e.openPresenterView()}})),e.parent.appendChild(t),e.on("activate",(({index:t})=>{n("page",(n=>n.textContent=`Page ${t+1} of ${e.slides.length}`))})),e.on("fragment",(({index:t,fragments:r,fragmentIndex:o})=>{n("prev",(e=>e.disabled=0===t&&0===o)),n("next",(n=>n.disabled=t===e.slides.length-1&&o===r.length-1))})),e.on("marp-active",(()=>g(t,!1))),e.on("marp-inactive",(()=>g(t,!0))),y()&&(e=>{for(const t of["","webkit"])h.addEventListener(t+"fullscreenchange",e)})((()=>n("fullscreen",(e=>e.classList.toggle("exit",y()&&x())))))}},I=e=>{window.addEventListener("message",(t=>{if(t.origin!==window.origin)return;const[n,r]=t.data.split(":");if("navigate"===n){const[t,n]=r.split(",");let o=Number.parseInt(t,10),a=Number.parseInt(n,10)+1;a>=e.fragments[o].length&&(o+=1,a=0),e.slide(o,{fragment:a})}}))};var T=["area","base","br","col","command","embed","hr","img","input","keygen","link","meta","param","source","track","wbr"];let A=e=>String(e).replace(/[&<>"']/g,(e=>`&${C[e]};`)),C={"&":"amp","<":"lt",">":"gt",'"':"quot","'":"apos"},N="dangerouslySetInnerHTML",K={className:"class",htmlFor:"for"},O={};function D(e,t){let n=[],r="";t=t||{};for(let e=arguments.length;e-- >2;)n.push(arguments[e]);if("function"==typeof e)return t.children=n.reverse(),e(t);if(e){if(r+="<"+e,t)for(let e in t)!1!==t[e]&&null!=t[e]&&e!==N&&(r+=` ${K[e]?K[e]:A(e)}="${A(t[e])}"`);r+=">"}if(-1===T.indexOf(e)){if(t[N])r+=t[N].__html;else for(;n.length;){let e=n.pop();if(e)if(e.pop)for(let t=e.length;t--;)n.push(e[t]);else r+=!0===O[e]?e:A(e)}r+=e?`</${e}>`:""}return O[r]=!0,r}const M=({children:e})=>D(null,null,...e),q="bespoke-marp-presenter-",_={container:`${q}container`,next:`${q}next`,nextContainer:`${q}next-container`,noteContainer:`${q}note-container`,infoContainer:`${q}info-container`,infoPage:`${q}info-page`,infoPageText:`${q}info-page-text`,infoPagePrev:`${q}info-page-prev`,infoPageNext:`${q}info-page-next`,infoTime:`${q}info-time`,infoTimer:`${q}info-timer`},U=e=>{const{title:t}=document;document.title="[Presenter view]"+(t?` - ${t}`:"");const n={},r=e=>(n[e]=n[e]||document.querySelector(`.${e}`),n[e]);document.body.appendChild((e=>{const t=document.createElement("div");return t.className=_.container,t.appendChild(e),t.insertAdjacentHTML("beforeend",D(M,null,D("div",{class:_.nextContainer},D("iframe",{class:_.next,src:"?view=next"})),D("div",{class:_.noteContainer}),D("div",{class:_.infoContainer},D("div",{class:_.infoPage},D("button",{class:_.infoPagePrev,tabindex:"-1",title:"Previous"},"Previous"),D("span",{class:_.infoPageText}),D("button",{class:_.infoPageNext,tabindex:"-1",title:"Next"},"Next")),D("time",{class:_.infoTime,title:"Current time"}),D("div",{class:_.infoTimer})))),t})(e.parent)),(e=>{r(_.nextContainer).addEventListener("click",(()=>e.next()));const t=r(_.next),n=(o=t,(e,t)=>{var n;return null===(n=o.contentWindow)||void 0===n?void 0:n.postMessage(`navigate:${e},${t}`,"null"===window.origin?"*":window.origin)});var o;t.addEventListener("load",(()=>{r(_.nextContainer).classList.add("active"),n(e.slide(),e.fragmentIndex),e.on("fragment",(({index:e,fragmentIndex:t})=>n(e,t)))}));const a=document.querySelectorAll(".bespoke-marp-note");a.forEach((e=>{e.addEventListener("keydown",(e=>e.stopPropagation())),r(_.noteContainer).appendChild(e)})),e.on("activate",(()=>a.forEach((t=>t.classList.toggle("active",t.dataset.index==e.slide()))))),e.on("activate",(({index:t})=>{r(_.infoPageText).textContent=`${t+1} / ${e.slides.length}`}));const i=r(_.infoPagePrev),s=r(_.infoPageNext);i.addEventListener("click",(t=>{i.blur(),e.prev({fragment:!t.shiftKey})})),s.addEventListener("click",(t=>{s.blur(),e.next({fragment:!t.shiftKey})})),e.on("fragment",(({index:t,fragments:n,fragmentIndex:r})=>{i.disabled=0===t&&0===r,s.disabled=t===e.slides.length-1&&r===n.length-1}));const l=()=>r(_.infoTime).textContent=(new Date).toLocaleTimeString();l(),setInterval(l,250)})(e)},V=e=>{if(!(e=>e.syncKey&&"string"==typeof e.syncKey)(e))throw new Error("The current instance of Bespoke.js is invalid for Marp bespoke presenter plugin.");Object.defineProperties(e,{openPresenterView:{enumerable:!0,value:X},presenterUrl:{enumerable:!0,get:F}}),d&&document.addEventListener("keydown",(t=>{"p"!==t.key||t.altKey||t.ctrlKey||t.metaKey||(t.preventDefault(),e.openPresenterView())}))};function X(){const{max:e,floor:t}=Math,n=e(t(.85*window.innerWidth),640),r=e(t(.85*window.innerHeight),360);return window.open(this.presenterUrl,q+this.syncKey,`width=${n},height=${r},menubar=no,toolbar=no`)}function F(){const e=new URLSearchParams(location.search);return e.set("view","presenter"),e.set("sync",this.syncKey),i(e)}const B=e=>{const t=s();return t===r&&e.appendChild(document.createElement("span")),{"":V,[n]:U,[r]:I}[t]},R=e=>{e.on("activate",(t=>{document.querySelectorAll(".bespoke-progress-parent > .bespoke-progress-bar").forEach((n=>{n.style.flexBasis=100*t.index/(e.slides.length-1)+"%"}))}))},j=e=>{const t=Number.parseInt(e,10);return Number.isNaN(t)?null:t},H=(e={})=>{const t={history:!0,...e};return e=>{let n=!0;const r=e=>{const t=n;try{return n=!0,e()}finally{n=t}},o=(t={fragment:!0})=>{((t,n)=>{const{min:r,max:o}=Math,{fragments:a,slides:i}=e,s=o(0,r(t,i.length-1)),l=o(0,r(n||0,a[s].length-1));s===e.slide()&&l===e.fragmentIndex||e.slide(s,{fragment:l})})((j(location.hash.slice(1))||1)-1,t.fragment?j(l("f")||""):null)};e.on("fragment",(({index:e,fragmentIndex:r})=>{n||c({f:0===r||r.toString()},{location:{...location,hash:`#${e+1}`},setter:(...e)=>t.history?history.pushState(...e):history.replaceState(...e)})})),setTimeout((()=>{o(),window.addEventListener("hashchange",(()=>r((()=>{o({fragment:!1}),c({f:void 0})})))),window.addEventListener("popstate",(()=>{n||r((()=>o()))})),n=!1}),0)}},Y=(e={})=>{var n;const r=e.key||(null===(n=window.history.state)||void 0===n?void 0:n.marpBespokeSyncKey)||Math.random().toString(36).slice(2),o=`bespoke-marp-sync-${r}`;var a;a={marpBespokeSyncKey:r},c({},{setter:(e,...n)=>t({...e,...a},...n)});const i=()=>{const e=f(o);return e?JSON.parse(e):Object.create(null)},s=e=>{const t=i(),n={...t,...e(t)};return u(o,JSON.stringify(n)),n},l=()=>{window.removeEventListener("pageshow",l),s((e=>({reference:(e.reference||0)+1})))};return e=>{l(),Object.defineProperty(e,"syncKey",{value:r,enumerable:!0});let t=!0;setTimeout((()=>{e.on("fragment",(e=>{t&&s((()=>({index:e.index,fragmentIndex:e.fragmentIndex})))}))}),0),window.addEventListener("storage",(n=>{if(n.key===o&&n.oldValue&&n.newValue){const r=JSON.parse(n.oldValue),o=JSON.parse(n.newValue);if(r.index!==o.index||r.fragmentIndex!==o.fragmentIndex)try{t=!1,e.slide(o.index,{fragment:o.fragmentIndex})}finally{t=!0}}}));const n=()=>{const{reference:e}=i();void 0===e||e<=1?m(o):s((()=>({reference:e-1})))};window.addEventListener("pagehide",(e=>{e.persisted&&window.addEventListener("pageshow",l),n()})),e.on("destroy",n)}},{PI:J,abs:W,sqrt:z,atan2:G}=Math,Q={passive:!0},Z=({slope:e=-.7,swipeThreshold:t=30}={})=>n=>{let r;const o=n.parent,a=e=>{const t=o.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};o.addEventListener("touchstart",(({touches:e})=>{r=1===e.length?a(e[0]):void 0}),Q),o.addEventListener("touchmove",(e=>{if(r)if(1===e.touches.length){e.preventDefault();const t=a(e.touches[0]),n=t.x-r.x,o=t.y-r.y;r.delta=z(W(n)**2+W(o)**2),r.radian=G(n,o)}else r=void 0})),o.addEventListener("touchend",(o=>{if(r){if(r.delta&&r.delta>=t&&r.radian){const t=(r.radian-e+J)%(2*J)-J;n[t<0?"next":"prev"](),o.stopPropagation()}r=void 0}}),Q)},ee="_tA",te=e=>{const t=document.documentTransition;if(!t)return;let n;e._tP=!1;const r=(n,{back:r,cond:o})=>a=>{const i=e.slides[e.slide()].querySelector("section[data-transition]");if(!i)return!0;const s=document.querySelector(".bespoke-marp-osc"),l=s?[s]:void 0;if(e._tP){if(a._tA){e._tP=!1;try{t.start({sharedElements:l}).catch((()=>{}))}catch(e){}return!0}}else{if(!o(a))return!0;e._tP=t.prepare({rootTransition:a.back||r?i.dataset.transitionBack:i.dataset.transition,sharedElements:l}).then((()=>n(a))).catch((()=>n(a)))}return!1};e.on("prev",r((t=>e.prev({...t,[ee]:!0})),{back:!0,cond:e=>{var t;return e.index>0&&!((null===(t=e.fragment)||void 0===t||t)&&n.fragmentIndex>0)}})),e.on("next",r((t=>e.next({...t,[ee]:!0})),{cond:t=>t.index+1<e.slides.length&&!(n.fragmentIndex+1<n.fragments.length)})),setTimeout((()=>{e.on("slide",r((t=>e.slide(t.index,{...t,[ee]:!0})),{cond:t=>{const n=e.slide();return t.index!==n&&(t.back=t.index<n,!0)}}))}),0),e.on("fragment",(e=>{n=e}))};let ne;const re=()=>(void 0===ne&&(ne="wakeLock"in navigator&&navigator.wakeLock),ne),oe=async()=>{const e=re();if(e)try{return await e.request("screen")}catch(e){console.warn(e)}return null},ae=async()=>{if(!re())return;let e;const t=()=>{e&&"visible"===document.visibilityState&&oe()};for(const e of["visibilitychange","fullscreenchange"])document.addEventListener(e,t);return e=await oe(),e};((t=document.getElementById("p"))=>{(()=>{const t=l("view");e.dataset.bespokeView=t===r||t===n?t:""})();const a=(e=>{const t=l(e);return c({[e]:void 0}),t})("sync")||void 0;var i,d,f,u,m,g,h,y,x,b,E,I;i=t,d=((...e)=>{const t=o.findIndex((e=>s()===e));return e.map((([e,n])=>e[t]&&n)).filter((e=>e))})([[1,1,0],Y({key:a})],[[1,1,1],B(t)],[[1,1,0],L],[[1,1,1],p],[[1,0,0],k()],[[1,1,1],$],[[1,1,1],H({history:!1})],[[1,1,0],P()],[[1,1,0],w],[[1,0,0],R],[[1,1,0],Z()],[[1,0,0],S()],[[1,0,0],te],[[1,1,1],v],[[1,1,0],ae]),u=1===(i.parent||i).nodeType?i.parent||i:document.querySelector(i.parent||i),m=[].filter.call("string"==typeof i.slides?u.querySelectorAll(i.slides):i.slides||u.children,(function(e){return"SCRIPT"!==e.nodeName})),g={},h=function(e,t){return(t=t||{}).index=m.indexOf(e),t.slide=e,t},b=function(e,t){m[e]&&(f&&x("deactivate",h(f,t)),f=m[e],x("activate",h(f,t)))},E=function(e,t){var n=m.indexOf(f)+e;x(e>0?"next":"prev",h(f,t))&&b(n,t)},I={off:y=function(e,t){g[e]=(g[e]||[]).filter((function(e){return e!==t}))},on:function(e,t){return(g[e]||(g[e]=[])).push(t),y.bind(null,e,t)},fire:x=function(e,t){return(g[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},slide:function(e,t){if(!arguments.length)return m.indexOf(f);x("slide",h(m[e],t))&&b(e,t)},next:E.bind(null,1),prev:E.bind(null,-1),parent:u,slides:m,destroy:function(e){x("destroy",h(f,e)),g={}}},(d||[]).forEach((function(e){e(I)})),f||b(0)})()}();</script></body></html>
