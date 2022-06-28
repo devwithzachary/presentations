@@ -11,6 +11,10 @@ npx @marp-team/marp-cli@latest -w slide-deck.md
 
 # 2022
 
+## [Vonage ❤️ Quick Apps](https://github.com/devwithzachary/presentations/tree/main/vonage-quickapps-meetup)
+
+Lightening Talk given at the Quick Apps meetup in Paris outlining who Vonage are and why they are interested in Quick Apps!
+
 # 2021
 ## [Serverless With Huawei](https://github.com/devwithzachary/presentations/tree/main/serverless-with-huawei)
 
