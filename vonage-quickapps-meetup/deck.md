@@ -400,7 +400,9 @@ I STRONGLY recommended checking it out. No, don't worry neither of us dances.
 ---
 # Thank you!
 
-![width:200px](images/me.jpg) ![width:300px](images/qr-code.png)
+![width:200px](images/me.jpg) 
+
+![bg right width:400px](images/qr-code.png)
 
 https://www.polywork.com/devwithzachary
 
