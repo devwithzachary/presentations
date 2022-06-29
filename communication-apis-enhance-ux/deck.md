@@ -37,11 +37,21 @@ And reduce notifications!
 
 ---
 
+How many notifications 
+do you have right now?
+
+![bg width:400px](images/notification-fold.png)
+
+---
+
 # Then it wasn't great.
 
 * Users bombarded with notifications. **Avg 46 per day**
 * Notifications treated like spam. **Reaction rate 4.6%**
 * UX nightmare
+
+ <font size=3> Source: Businessofapp.com</font> 
+
 
 ![bg right width:400px](images/notification-fold.png)
 
@@ -195,6 +205,8 @@ curl -X "POST" "https://rest.nexmo.com/sms/json" \
 * Users select and receive important alerts
 * Direct and actionable via in app linking
 
+ <font size=3> Source: redeye.com</font> 
+
 ![bg right width:500px](images/sms.svg)
 
 <!--
@@ -277,10 +289,10 @@ client.serverCall("PHONE_NUMBER",
 # In App Video Doctor
 
 * Enable virtual 1:1 with doctor
-* Doctor can see many more paitences
+* Doctor can see many more patients
 * Still able to provide visual diagnosises
 
-![bg right width:500px](images/video.png)
+![bg right width:500px](images/doctor-video.png)
 
 ---
 
@@ -338,6 +350,15 @@ session?.connect(token)
 ---
 
 # Maximise Engagement
+
+![bg right width:600px](images/Vonage-API-Platform.svg)
+
+---
+
+# Get started!
+
+* Join us at the Vonage booth! 
+* Sign up at developer.vonage.com
 
 ![bg right width:600px](images/Vonage-API-Platform.svg)
 
