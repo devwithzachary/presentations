@@ -26,7 +26,7 @@ Plus a little about what we plan to do this year!
 - Moved into DevRel and never looked back!
 - Content first approach
 
-![bg right width:300px](images/tiktok.png)
+![bg right width:300px](images/me.jpg)
 
 <!--
 
@@ -68,7 +68,7 @@ Well if you are of a certain age and spent any time in the US you may well have 
 
 # Vonage for Home
 
-* Home VOIP phone service
+* Home Voice over IP (VOIP) phone service
 
 ![bg right width:500px](images/Vonage-Logo.wine.svg)
 
@@ -112,7 +112,7 @@ All these products come together to form a Unified Communications as a service o
 * Self service
 
 
-![bg right width:500px](images/Vonage_Logo_black.png)
+![bg right width:500px](images/Vonage-API-Platform.svg)
 
 <!-- 
 
@@ -266,13 +266,22 @@ And then it's the Instant availability of Quick Apps. Something you simply can't
 
 # Unlock new use cases
 
-![bg right width:500px](images/Vonage_Logo_black.png)
+![bg right width:500px](images/Enterprise_Image.svg)
 
 <!--
-
 What do all these things bring together? Well, it's the ability to unlock new use cases, for mobile applications in general.
 
 But of course specifically for us, it unlocks new ways for people to use communication APIs.
+
+-->
+
+---
+
+# Museum Help Desk
+
+![bg right width:500px](images/museum.jpeg)
+
+<!--
 
 You are in a new city in a foreign country, the hotel you stay in is recommended a museum that's close by and seems interesting.
 The hotel gives you a leaflet about the museum but you have a few questions. 
@@ -285,6 +294,15 @@ Within seconds a voice call is started over the WIFI network that connects you d
 As far as the museum is concerned you are just phoning their call, they don't have to make any changes to the process.
 But now you have a direct, free way to contact the museum and ask those burning questions.
 
+-->
+
+---
+
+# Car Parking
+
+![bg right width:500px](images/pay-by-mobile-islington.jpeg)
+
+<!--
 Or perhaps you are parking in a public car park. I'm not sure about in Paris but certainly, in London a lot of parking no longer has a physical pay point.
 You have to use an app to pay, so you go through the process of searching for the app in the app store, downloading, signing up, and confirming your identity via 2fa.
 Then enter your payment info and finally search for this specific parking location and pay.
@@ -305,7 +323,7 @@ why not offer an SMS option, text the park location and your license plate to a 
 
 # Remove friction, improve UX
 
-![bg right width:500px](images/Vonage_Logo_black.png)
+![bg right width:500px](images/sms.svg)
 
 <!--
 
@@ -379,8 +397,9 @@ Alongside that, we will continue to build Vonage-specific documentation around u
 # DevRel Experience
 
 * Provide expert DevRel experience to QAI
-* Assit in events and content
+* Assist in events and content
 * Promote via socials
+* vm.tiktok.com/ZMNhPbvB4/
 
 ![bg right width:300px](images/qai-x-devwithzachary.png)
 
@@ -404,9 +423,9 @@ I STRONGLY recommended checking it out. No, don't worry neither of us dances.
 
 ![bg right width:400px](images/qr-code.png)
 
-https://www.polywork.com/devwithzachary
+polywork.com/devwithzachary
 
-https://github.com/devwithzachary/presentations
+github.com/devwithzachary/presentations
 
 <!--
 
