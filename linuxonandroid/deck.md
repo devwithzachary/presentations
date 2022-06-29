@@ -14,10 +14,13 @@ Reviving a 10 year old Android project
 
 # Who am I?
 
-- Sr Android Developer Advocate at Vonage
-- Android Developer for 12+ years
-- An Android enthusiast for many many years
-- Lead of the LinuxOnAndroid project
+* Sr Android Developer Advocate at Vonage
+* Android Developer for 12+ years
+* An Android enthusiast for many many years
+* Lead of the LinuxOnAndroid project
+* Four Leasons learnt by fire
+
+![bg right width:400px](images/me.jpg) 
 
 ---
 
@@ -30,7 +33,7 @@ Reviving a 10 year old Android project
 # What is LinuxOnAndroid
 
 * Run full (GNU) Linux distros on your Android device
-* Via Chroot
+* Via Chroot (Think Linux for Chromebook)
 * Run GUI via VNC
 * Doesn't touch Android
 * Required Root
@@ -99,11 +102,11 @@ Integrated downloading, extracting and running Linux images
 
 # And then.... Life
 
-* Offered a job
-* Worked on building a tablet with Linux on Android built in
-* Freelanced as Android developer
-* Got married
-* No time for Linux on Android
+* \+ Offered a job
+* \+  Worked on building a tablet with Linux on Android built in
+* \+ Freelanced as Android developer
+* \+ Got married
+* = No time for Linux on Android
 
 ![bg right width:600px](images/unity.png)
 
