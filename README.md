@@ -19,23 +19,38 @@ npx @marp-team/marp-cli@latest -w slide-deck.md
 Lightening Talk given at the Quick Apps meetup in Paris outlining who Vonage are and why they are interested in Quick Apps!
 
 # 2021
-## [Serverless With Huawei](https://github.com/devwithzachary/presentations/tree/main/serverless-with-huawei)
+## Serverless With Huawei
+
+- [Source](https://github.com/devwithzachary/presentations/tree/main/serverless-with-huawei)
+- [Deck](https://devwithzachary.github.io/presentations/serverless-with-huawei/deck.html)
 
 An overview talk about the serverless offerings that Huawei currently has, this was first given virtually at a GDG Cloud London meetup.
 
-## [Developer Advocacy](https://github.com/devwithzachary/presentations/tree/main/developer-advocacy)
+## Developer Advocacy
+
+- [Source](https://github.com/devwithzachary/presentations/tree/main/developer-advocacy)
+- [Deck](https://devwithzachary.github.io/presentations/developer-advocacy/deck.html)
 
 An overview of what it is to be a developer advocate, what DevRel is and how it all fits together.
 First given virtually to [Virginia Serious Game Institute at GMU](https://www.youtube.com/watch?v=Ts_jQdA6DNE) and later tweaked to make up part of my Youtube video [What is DevRel (Developer Relations) And a Developer Advocate?](https://www.youtube.com/watch?v=wOPqL-yGE_o)
 
-## [Tiktok for Devrel](https://github.com/devwithzachary/presentations/tree/main/tiktok-for-devrel)
+## Tiktok for Devrel
+
+- [Source](https://github.com/devwithzachary/presentations/tree/main/tiktok-for-devrel)
+- [Deck](https://devwithzachary.github.io/presentations/tiktok-for-devrel/deck.html)
 
 Lightening talk on how you can use TikTok to reach new developer audienaces, this was presented virtually at [DevRel Con 2021](https://www.youtube.com/watch?v=y9CFTboEOmE)
 
-## [Crossplatform Authentication](https://github.com/devwithzachary/presentations/tree/main/crossplatform-authentication)
+## Crossplatform Authentication
+
+- [Source](https://github.com/devwithzachary/presentations/tree/main/crossplatform-authentication)
+- [Deck](https://devwithzachary.github.io/presentations/crossplatform-authentication/deck.html)
 
 Lightening talk on how you can use Huawei's services to enable cross platform authentication (And why you might want to do this). Given at [DevFest UKI 2021](https://www.youtube.com/watch?v=MmrFEo-3acs&t=3139s) virtually.
 
-## [Workshop - Serverless with Huawei](https://github.com/devwithzachary/presentations/tree/main/workshop-serverless-with-huawei)
+## Workshop - Serverless with Huawei
+
+- [Source](https://github.com/devwithzachary/presentations/tree/main/workshop-serverless-with-huawei)
+- [Deck](https://devwithzachary.github.io/presentations/workshop-serverless-with-huawei/deck.html)
 
 Workshop style 1 hour talk going into more detail on Huawei's serverless offerings. Also given at DevFest UKI 2021 in person.
