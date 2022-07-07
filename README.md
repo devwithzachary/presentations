@@ -11,6 +11,13 @@ npx @marp-team/marp-cli@latest -w slide-deck.md
 
 # 2022
 
+## Using Communication APIs to enhance your UX
+
+- [Source](https://github.com/devwithzachary/presentations/tree/main/communication-apis-enhance-ux)
+- [Deck](https://devwithzachary.github.io/presentations/communication-apis-enhance-ux/deck.html)
+
+Talk on Day two of Droidcon Berlin 2022 including a rant on why notifications now suck and how we can better communicate with users.
+
 ## Vonage ❤️ Quick Apps
 
 - [Source](https://github.com/devwithzachary/presentations/tree/main/vonage-quickapps-meetup)
