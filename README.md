@@ -11,6 +11,13 @@ npx @marp-team/marp-cli@latest -w slide-deck.md
 
 # 2022
 
+## LinuxOnAndroid
+
+- [Source](https://github.com/devwithzachary/presentations/tree/main/clinuxonandroid)
+- [Deck](https://devwithzachary.github.io/presentations/linuxonandroid/deck.html)
+
+Talk given on Day three of Droidcon Berlin 2022 centered around the LinuxOnAndroid project, what is is, and the lessons I've learned when trying to rebuild a 10+ year old android project.
+
 ## Using Communication APIs to enhance your UX
 
 - [Source](https://github.com/devwithzachary/presentations/tree/main/communication-apis-enhance-ux)
