@@ -20,7 +20,7 @@ theme: default
 * DevRel for 18+ months
 * Pet Dad
 
-![bg right width:500px](images/burt-laptop.jpeg)
+![bg right ](images/pets.png)
 
 ---
 
@@ -47,7 +47,7 @@ theme: default
 # How can you get involved? 
 # Leasons learned!
 
-![bg right width:600px](images/profiles.png)
+![bg right ](images/profiles.png)
 
 ---
 
@@ -77,7 +77,7 @@ Can anyone beat me? Did anyone start older? G1?
 ## XDA
 # Exploded in popularity around Android
 
-![bg right width:600px](images/XDA_User_Count.png)
+![bg right width:650px](images/XDA_User_Count.png)
 
 ---
 ## XDA
@@ -95,7 +95,7 @@ Can anyone beat me? Did anyone start older? G1?
 ## Early Communities
 # App Development
 
-![bg right width:600px](images/eclipse.png)
+![bg right width:650px](images/eclipse.png)
 
 ---
 ## Early Communities
@@ -105,18 +105,18 @@ Can anyone beat me? Did anyone start older? G1?
 ---
 ## Early Communities
 # Theming
-![bg right width:300px](images/senseui.jpeg)
+![bg right width:400px](images/senseui.jpeg)
 
 ---
 ## Early Communities
 # Kernel Tweaks
-![bg right width:300px](images/custom-kernel.jpg)
+![bg right width:350px](images/custom-kernel.jpg)
 
 ---
 ## Early Communities
 # Root
 
-![bg right width:300px](images/linux.webp)
+![bg right width:400px](images/linux.webp)
 
 ---
 
@@ -126,7 +126,7 @@ Can anyone beat me? Did anyone start older? G1?
 * Open and Free
 * Collaboration
 
-![bg right width:500px](images/chicagoroboto.jpeg)
+![bg right ](images/chicagoroboto.jpeg)
 
 ---
 
@@ -134,7 +134,7 @@ Can anyone beat me? Did anyone start older? G1?
 
 # Not Apple
 
-![bg right width:500px](images/apple.png)
+![bg right width:550px](images/apple.png)
 
 ---
 
@@ -143,19 +143,19 @@ Can anyone beat me? Did anyone start older? G1?
 # University for Computer Science + Game Design
 
 
-![bg right width:400px](images/uni.JPG)
+![bg right ](images/uni.JPG)
 
 ---
 
 ## Shaped my Career
 # Android Community opened new options
 
-![bg right width:500px](images/states-of-a-programmer.png)
+![bg right width:600px](images/states-of-a-programmer.png)
 
 ---
 ## Shaped my Career
 
-![bg right width:500px](images/XDACon.jpeg)
+![bg right ](images/XDACon.jpeg)
 # Networking
 
 ---
@@ -166,7 +166,7 @@ Can anyone beat me? Did anyone start older? G1?
 * Moderator on XDA
 * Events, Meetups, Conferences
 
-![bg right width:500px](images/wifeblocker.JPG)
+![bg right ](images/wifeblocker.JPG)
 
 ---
 
@@ -188,7 +188,7 @@ Can anyone beat me? Did anyone start older? G1?
 * Building a tablet/desktop hybrid
 * Amazing experience all because of Android
 
-![bg right width:600px](images/unity.png)
+![bg right width:650px](images/unity.png)
 
 ---
 
@@ -196,18 +196,18 @@ Can anyone beat me? Did anyone start older? G1?
 
 # Time for a change
 
-![bg right width:400px](images/change.jpeg)
+![bg right width:600px](images/change.jpeg)
 
 ---
 ## Move into Developer Relations
 # Discovering DevRel changed everything
 
-![bg right width:400px](images/boom-mind-blown.gif)
+![bg right width:600px](images/boom-mind-blown.gif)
 
 ---
 ## Move into Developer Relations
 # I was already doing it!
-![bg right width:400px](images/droidconln2021.jpeg)
+![bg right](images/droidconln2021.jpeg)
 
 ---
 ## Move into Developer Relations
@@ -224,7 +224,7 @@ Can anyone beat me? Did anyone start older? G1?
 <font size=3> Source: medium.com/@edshee</font> 
 
 
-![bg right width:500px](images/ven.png)
+![bg right width:600px](images/ven.png)
 
 <!--
 https://medium.com/@edshee/developer-relations-explained-c1cce2ea53a8
@@ -248,45 +248,45 @@ https://medium.com/@edshee/developer-relations-explained-c1cce2ea53a8
 ---
 ## What is DevRel?
 # Code
-![bg right width:500px](images/coding.jpeg)
+![bg right width:600px](images/coding.jpeg)
 
 ---
 ## What is DevRel?
 # Community
-![bg right width:600px](images/talk.jpeg)
+![bg right](images/talk.jpeg)
 
 ---
 ## What is DevRel?
 
 # Connecting Internal Developers with External Developers
-![bg right width:500px](images/quick.jpg)
+![bg right](images/quick.jpg)
 
 ---
 
 ## What is DevRel?
 
 # Help developers be successful with the tools a company offers
-![bg right width:500px](images/SANDCASTLES.png)
+![bg right width:600px](images/SANDCASTLES.png)
 
 ---
 
 ## What is DevRel?
 
 # Bridges the gap between company and community
-![bg right width:500px](images/devoxx.jpg)
+![bg right](images/devoxx.jpg)
 
 ---
 
 ## What is DevRel?
 
 # Stickers
-![bg right width:500px](images/Stickers.jpg)
+![bg right](images/Stickers.jpg)
 
 ---
 
 # DevRel in Nutshell
 
-![bg right width:500px](images/nutshell.jpeg)
+![bg right width:600px](images/nutshell.jpeg)
 
 ---
 
@@ -298,7 +298,7 @@ https://medium.com/@edshee/developer-relations-explained-c1cce2ea53a8
 * XDA Moderators
 * XDA Users
 
-![bg right width:500px](images/XDADevelopers.svg)
+![bg right width:600px](images/XDADevelopers.svg)
 
 ---
 
@@ -309,12 +309,12 @@ https://medium.com/@edshee/developer-relations-explained-c1cce2ea53a8
 ## Android Community Now
 # Community³
 
-![bg right width:300px](images/Android_robot.svg)
+![bg right width:500px](images/Android_robot.svg)
 
 ---
 ## Community³
 # Socials
-![bg right width:500px](images/twitter-android.png)
+![bg right width:600px](images/twitter-android.png)
 
 ---
 ## Community³
@@ -324,12 +324,12 @@ https://medium.com/@edshee/developer-relations-explained-c1cce2ea53a8
 ---
 ## Community³
 # Meetup groups
-![bg right width:500px](images/londroid.png)
+![bg right width:600px](images/londroid.png)
 
 ---
 ## Community³
 # Events!
-![bg right width:500px](images/roboto.jpeg)
+![bg right width:600px](images/roboto.jpeg)
 
 ---
 
@@ -340,7 +340,7 @@ https://medium.com/@edshee/developer-relations-explained-c1cce2ea53a8
 * Create content!
 * Ask questions
 * Help others
-![bg right width:500px](images/spongebob-friend.gif)
+![bg right width:600px](images/spongebob-friend.gif)
 
 ---
 
@@ -351,7 +351,7 @@ https://medium.com/@edshee/developer-relations-explained-c1cce2ea53a8
 * Collaboration = Great Success
 * Bricking phones sucks.
 
-![bg right width:500px](images/android-meme-06.jpg.webp)
+![bg right width:600px](images/android-meme-06.jpg.webp)
 
 
 ---
@@ -360,7 +360,7 @@ https://medium.com/@edshee/developer-relations-explained-c1cce2ea53a8
 
 ![width:200px](images/me.jpg) 
 
-![bg right width:400px](images/qr-code.png)
+![bg right width:500px](images/qr-code.png)
 
 polywork.com/devwithzachary
 
