@@ -11,9 +11,17 @@ npx @marp-team/marp-cli@latest -w slide-deck.md
 
 # 2022
 
+## From Developer to DevRel, How the Android community helped me grow - Keynote
+
+- [Source](https://github.com/devwithzachary/presentations/tree/main/developer-to-devrel-45minute)
+- [Deck](https://devwithzachary.github.io/presentations/developer-to-devrel-45minute/deck.html)
+
+Keynote talk given at [Chicago Reoboto 2022](https://chicagoroboto.com/)
+
+
 ## LinuxOnAndroid
 
-- [Source](https://github.com/devwithzachary/presentations/tree/main/clinuxonandroid)
+- [Source](https://github.com/devwithzachary/presentations/tree/main/linuxonandroid)
 - [Deck](https://devwithzachary.github.io/presentations/linuxonandroid/deck.html)
 
 Talk given on Day three of Droidcon Berlin 2022 centered around the LinuxOnAndroid project, what is is, and the lessons I've learned when trying to rebuild a 10+ year old android project.
