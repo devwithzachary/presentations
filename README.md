@@ -15,6 +15,7 @@ npx @marp-team/marp-cli@latest -w slide-deck.md
 
 - [Source](https://github.com/devwithzachary/presentations/tree/main/developer-to-devrel-45minute)
 - [Deck](https://devwithzachary.github.io/presentations/developer-to-devrel-45minute/deck.html)
+- [Video](https://www.youtube.com/watch?v=YSbUNRpDpas)
 
 Keynote talk given at [Chicago Reoboto 2022](https://chicagoroboto.com/)
 
@@ -23,6 +24,7 @@ Keynote talk given at [Chicago Reoboto 2022](https://chicagoroboto.com/)
 
 - [Source](https://github.com/devwithzachary/presentations/tree/main/linuxonandroid)
 - [Deck](https://devwithzachary.github.io/presentations/linuxonandroid/deck.html)
+- [Video](https://www.droidcon.com/2022/08/01/linuxonandroid-reviving-a-10-year-old-android-project/)
 
 Talk given on Day three of Droidcon Berlin 2022 centered around the LinuxOnAndroid project, what is is, and the lessons I've learned when trying to rebuild a 10+ year old android project.
 
@@ -30,6 +32,7 @@ Talk given on Day three of Droidcon Berlin 2022 centered around the LinuxOnAndro
 
 - [Source](https://github.com/devwithzachary/presentations/tree/main/communication-apis-enhance-ux)
 - [Deck](https://devwithzachary.github.io/presentations/communication-apis-enhance-ux/deck.html)
+- [Video](https://www.droidcon.com/2022/08/02/using-communication-apis-to-enhance-your-ux-and-reduce-notifications/)
 
 Talk on Day two of Droidcon Berlin 2022 including a rant on why notifications now suck and how we can better communicate with users.
 
@@ -52,6 +55,7 @@ An overview talk about the serverless offerings that Huawei currently has, this 
 
 - [Source](https://github.com/devwithzachary/presentations/tree/main/developer-advocacy)
 - [Deck](https://devwithzachary.github.io/presentations/developer-advocacy/deck.html)
+- [Video](https://www.youtube.com/watch?v=wOPqL-yGE_o)
 
 An overview of what it is to be a developer advocate, what DevRel is and how it all fits together.
 First given virtually to [Virginia Serious Game Institute at GMU](https://www.youtube.com/watch?v=Ts_jQdA6DNE) and later tweaked to make up part of my Youtube video [What is DevRel (Developer Relations) And a Developer Advocate?](https://www.youtube.com/watch?v=wOPqL-yGE_o)
@@ -60,6 +64,7 @@ First given virtually to [Virginia Serious Game Institute at GMU](https://www.yo
 
 - [Source](https://github.com/devwithzachary/presentations/tree/main/tiktok-for-devrel)
 - [Deck](https://devwithzachary.github.io/presentations/tiktok-for-devrel/deck.html)
+- [Video](https://www.youtube.com/watch?v=y9CFTboEOmE&ab_channel=DevRel)
 
 Lightening talk on how you can use TikTok to reach new developer audienaces, this was presented virtually at [DevRel Con 2021](https://www.youtube.com/watch?v=y9CFTboEOmE)
 
@@ -67,6 +72,7 @@ Lightening talk on how you can use TikTok to reach new developer audienaces, thi
 
 - [Source](https://github.com/devwithzachary/presentations/tree/main/crossplatform-authentication)
 - [Deck](https://devwithzachary.github.io/presentations/crossplatform-authentication/deck.html)
+- [Video](https://www.youtube.com/watch?v=MmrFEo-3acs&t=3139s)
 
 Lightening talk on how you can use Huawei's services to enable cross platform authentication (And why you might want to do this). Given at [DevFest UKI 2021](https://www.youtube.com/watch?v=MmrFEo-3acs&t=3139s) virtually.
 
