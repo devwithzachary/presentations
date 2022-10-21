@@ -156,6 +156,8 @@ The one that gets to stand up here and talk to you.
 
 # Happy Codeshare! Right?!
 
+![bg right width:600px](images/happy.jpeg)
+
 ---
 
 # <!--fit--> No.
@@ -168,9 +170,13 @@ The one that gets to stand up here and talk to you.
 * C++ code wasn't accessible to all on the team. 
 * Very slow builds limiting release cadence
 
+![bg right width:500px](images/codeshare.png)
+
 ---
 
 # Rewrite!
+
+![bg right width:600px](images/tired.png)
 
 ---
 
@@ -179,12 +185,13 @@ The one that gets to stand up here and talk to you.
 * Shared code, just better
 * Share business logic, not low-level platform stuff
 
+![bg right width:500px](images/perfect.png)
+
 ---
 
 ## What options?
-* C++
-* Rust
-* Kotlin Multiplatform
+
+![bg right width:500px](images/options.png)
 
 ---
 
@@ -199,6 +206,8 @@ The one that gets to stand up here and talk to you.
 * Doesn't solve binding issues. 
 * Tooling for native was relatively unknown.
 
+![bg right width:500px](images/rust.png)
+
 ---
 
 ## Kotlin Multiplatform
@@ -206,6 +215,8 @@ The one that gets to stand up here and talk to you.
 * Also a very good option for shared codebase
 * Bindings solved! 
 * Let's Prototype
+
+![bg right width:500px](images/kotlin-text.png)
 
 ---
 
@@ -215,6 +226,8 @@ The one that gets to stand up here and talk to you.
 * Very careful about what to put into the shared code
 * KMP for business logic. Platform specific code stays out!
 
+![bg right width:500px](images/perfect.png)
+
 ---
 
 ## Platform Specific
@@ -222,27 +235,57 @@ The one that gets to stand up here and talk to you.
 * Networking - HTTP client, WebSocket, WebRTC client.
 * Platform specific exposed behind interfaces for KMP to access.
 
+![bg right width:600px](images/webrtc.png)
+
 ---
 
 ## Prototype delivered!
 
 # And it worked!
 
----
-
-## Then drama!
-
-* Ashley dared to have a baby (congratulations)
-* Team members moved on
-* Team had to focus on bug fixing in the current SDK
+![bg right width:500px](images/SANDCASTLES.png)
 
 ---
 
-## But wait!
+#  <!--fit--> Then drama!
 
-* The team is reminded of the pain points
-* Ashley returns! 
-* “Sod it let's do it” - Ashley
+---
+
+# Ashley dared to have a baby (congratulations)
+
+![bg right width:500px](images/surpise.jpeg)
+
+---
+
+# Team members left
+
+![bg right width:500px](images/deadpool.jpeg)
+
+---
+
+# Team had to focus on bug fixing in the current SDK
+
+![bg right width:500px](images/startrek.jpeg)
+
+---
+
+# <!--fit-->  But wait!
+
+---
+
+# The team is reminded of the pain points
+
+![bg right width:500px](images/cry.jpeg)
+
+---
+
+# Ashley returns! 
+
+![bg right width:500px](images/ash.jpeg)
+
+---
+
+# <!--fit-->  “Sod it let's do it” - Ashley
 
 ---
 
@@ -252,45 +295,45 @@ The one that gets to stand up here and talk to you.
 
 ---
 
-## From Prototype to SDK
 # Focus had just been on iOS and Android, JS was needed as well!
+
+![bg right width:500px](images/js.png)
 
 ---
 
-## From Prototype to SDK
 
 # Main changes had nothing to do with writing Kotlin Multiplatform code
 
 ---
 
-## From Prototype to SDK
-
 # Team had to learn Kotlin 
 mix of Android, iOS and JS devs
 
----
+![bg right width:500px](images/kotlin-text.png)
 
-## From Prototype to SDK
+---
 
 # All in on Gradle
 
 This made iOS devs sad.
 
----
+![bg right width:600px](images/gradle.png)
 
-## From Prototype to SDK
+---
 
 # Shift in tooling, moving to a new IDE 
 
 A lot of the team had been using their own preferred IDE/text editors for the shared C++ code.
 
+![bg right width:400px](images/androidstudio.png)
+
 ---
 
 ## Today!
 
-# Vonage Client SDK for Voice public
+# Vonage Client SDK for Voice in beta
 
-With others coming soon(tm)
+With others coming soon™️
 
 ---
 
@@ -298,21 +341,15 @@ With others coming soon(tm)
 
 ---
 
-## Lessons Learnt / Reflection
-
 # Keep up to date with Kotlin updates
 
 still getting pretty large updates, but they are kept behind feature flags
 
 ---
 
-## Lessons Learnt / Reflection
-
 # Original pain point of consistency has been removed!
 
 ---
-
-## Lessons Learnt / Reflection
 
 # Platform code is just exposing the functionality 
 
@@ -320,37 +357,35 @@ More time to work on improving the API contract and making the SDK a joy to use!
 
 ---
 
-## Lessons Learnt / Reflection
-
 # Everyone knows Kotlin, anyone can build a feature 
 
 unlike before with C++/SDK
 
 ---
 
-## Lessons Learnt / Reflection
-
 # Move to a Mono repo
 
 ---
-
-## Lessons Learnt / Reflection
 
 # We have tests! 
 
 (Tests are the key to saving the world.)
 
----
+![bg right width:500px](images/kotlin-super-hero.png)
 
-## Thank you!
+---
 
 # Go check out the SDKs
 
+developer.vonage.com/tools
+
+![bg right width:400px](images/sdks.svg)
+
 ---
 
-## Thank you!
-
 # See you at Droidcon!
+
+![bg right width:400px](images/android-figs.jpeg)
 
 ---
 
