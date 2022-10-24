@@ -1,7 +1,7 @@
 ---
 marp: true
 header: 'How Vonage Moved its SDKs to KMP and saved the world (kind of)'
-footer: 'Zachary Powell (@devwithzachary)/Ashley Arthur'
+footer: 'Zachary Powell (@devwithzachary)/Ashley Arthur (@ishley30)'
 theme: default
 ---
 
@@ -16,14 +16,16 @@ theme: default
 ## Intros
 # Ashley Arthur
 ## Software Dev Engineer 
-The brains behind the talk
+The brains behind the talk - @ishley30
+
+![bg right width:500px](images/ashley.jpeg) 
 
 ---
 
 ## Intros
 # Zachary Powell
 ## ~~Sr Android Developer Advocate~~ Manager, DevRel
-The one that gets to stand up here and talk to you.
+The one that gets to stand up here and talk to you. - @devwithzachary
 
 ![bg right width:500px](images/me-talk.jpeg) 
 
@@ -386,6 +388,12 @@ developer.vonage.com/tools
 # See you at Droidcon!
 
 ![bg right width:400px](images/android-figs.jpeg)
+
+---
+
+## Thank you!
+
+# Conversation service team @ Vonage
 
 ---
 
