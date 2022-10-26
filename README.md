@@ -11,6 +11,13 @@ npx @marp-team/marp-cli@latest -w slide-deck.md
 
 # 2022
 
+## How Vonage Moved its SDKs to KMP and saved the world (kind of)
+- [Source](https://github.com/devwithzachary/presentations/tree/main/kotlin-multiplatform-saved-the-world)
+- [Deck](https://devwithzachary.github.io/presentations/kotlin-multiplatform-saved-the-world/deck.html)
+
+Keynote talk given at Vonage DevCity London
+
+
 ## From Developer to DevRel, How the Android community helped me grow - Keynote
 
 - [Source](https://github.com/devwithzachary/presentations/tree/main/developer-to-devrel-45minute)
