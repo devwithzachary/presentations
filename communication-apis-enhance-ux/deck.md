@@ -1,7 +1,7 @@
 ---
 marp: true
 header: 'Using Communication APIs to enhance your UX'
-footer: '@devwithzachary'
+footer: '@devwithzachary@androiddev.social'
 theme: default
 ---
 
@@ -14,10 +14,39 @@ And reduce notifications!
 
 - Sr Android Developer Advocate at Vonage
 - Android Developer for 12+ years
-- Keep getting pulled into Telecommunications!
-- Warhammer enthusiast
+- DevRel for 2 years
+- Pet Dad
 
-![bg right width:400px](images/warhammer.jpeg)
+![bg right ](images/pets.png)
+
+---
+
+# Who am I?
+
+- ~~Sr Android Developer Advocate~~ DevRel Manager at Vonage
+- Android Developer for 12+ years
+- DevRel for 2 years
+- Pet Dad
+
+![bg right ](images/pets.png)
+
+---
+
+## Android
+# Other platforms are available
+
+![bg right width:400px](images/clients.png)
+
+---
+
+## Takeaways
+
+* History of notifications on Android
+* Why today notifications suck!
+* What are communication APIs?
+* How might you use them in your applications?
+
+![bg right width:400px](images/pizza.jpeg)
 
 ---
 
@@ -27,28 +56,54 @@ And reduce notifications!
 
 ---
 
-# It was great!
+## It was great!
 
-* Quick access to important information
-* Push content to users while the app is closed
-* Access to controls for music apps.
+# Quick access to important information
 
 ![bg right width:400px](images/notification-progressbar_2x.png)
 
 ---
 
-How many notifications 
-do you have right now?
+## It was great!
+
+# Push content to users while the app is closed
+
+![bg right width:400px](images/important.png)
+
+---
+
+## It was great!
+
+# Access to controls for music apps.
+
+![bg right width:300px](images/music_controls.png)
+
+---
+
+# Look at your phone. 
+# How many notifications do you have right now?
+
+---
+
+# <!--fit--> 5?
+
+---
+
+# <!--fit--> 10?
+
+---
+
+# <!--fit--> 32767?
+
+---
 
 ![bg width:400px](images/notification-fold.png)
 
 ---
 
-# Then it wasn't great.
+## Then it wasn't great.
 
-* Users bombarded with notifications. **Avg 46 per day**
-* Notifications treated like spam. **Reaction rate 4.6%**
-* UX nightmare
+# Users bombarded with notifications. **Avg 46 per day**
 
  <font size=3> Source: Businessofapp.com</font> 
 
@@ -60,118 +115,212 @@ Stats source: https://www.businessofapps.com/marketplace/push-notifications/rese
 -->
 ---
 
-# Control is Yours!
+## Then it wasn't great.
 
-* Android introduces ways for users to mute/stop notifications
-* Great right?
+# Notifications treated like spam. **Reaction rate 4.6%**
+
+ <font size=3> Source: Businessofapp.com</font> 
+
+
+![bg right width:400px](images/notification-fold.png)
+
+<!--
+Stats source: https://www.businessofapps.com/marketplace/push-notifications/research/push-notifications-statistics/
+-->
+---
+
+## Then it wasn't great.
+
+# UX nightmare
+
+![bg right width:400px](images/notification-fold.png)
+
+---
+
+## Control is Yours!
+
+# Android introduces ways for users to mute/stop notifications
 
 ![bg right width:300px](images/Notification-Importance-Controls-Android-Oreo-12.webp)
 
 ---
 
-# Terrible for Developers
+## Control is Yours!
 
-* Users completely shutting off notifications for apps
-* No longer able to make sure users get important information
+# Great UX! But at what cost?
+
+![bg right width:300px](images/Notification-Importance-Controls-Android-Oreo-12.webp)
+
+---
+
+## Terrible for Developers
+
+# Users completely shut off notifications
 
 ![bg right width:300px](images/Notifications_Android_7_3.webp)
 
 ---
 
-# Notifications for less important stuff
+## Terrible for Developers
 
-* Info that may or may not be seen by the user
+# Can't rely on notifications for important stuff!
+
+![bg right width:300px](images/Notifications_Android_7_3.webp)
+
+---
+
+## Notifications for less important stuff
+
+# Info that may or may not be seen by the user
 
 ![bg right width:400px](images/The-Android-90-Pie-notification-drawer-showing-four-different-kinds-of-notifications.ppm)
 
 ---
 
-# But what about the important stuff?
+## Notifications for less important stuff
 
-* When you need a user to action something
-* Starting a conversation
+# Become used even more for 'spam'
+
+![bg right width:400px](images/The-Android-90-Pie-notification-drawer-showing-four-different-kinds-of-notifications.ppm)
+
+---
+
+## But what about the important stuff?
+
+# When you need a user to action something
 
 ![bg right width:400px](images/attention-vector-information-announcement-important-attention-please-alert-poster_41737-1002.webp)
 
 ---
 
-# Conversation Flow
+## But what about the important stuff?
 
-* Send notification, pray the user sees it
-* Wait until they open the app (may or may not be 10+ years)
-* Start conversation (Bot, direct user to live chat, phone number)
+# Time sensative infomation
+
+![bg right width:400px](images/attention-vector-information-announcement-important-attention-please-alert-poster_41737-1002.webp)
+
+---
+
+## But what about the important stuff?
+
+# Start a Conversation Flow
+
+![bg right width:400px](images/attention-vector-information-announcement-important-attention-please-alert-poster_41737-1002.webp)
+
+---
+
+## Conversation Flow
+
+# Send notification, pray the user sees it
 
 ![bg right width:400px](images/bot.png)
 
 ---
 
-# Not a good User Experience
+## Conversation Flow
 
-* Slow
-* Requires a lot of steps
-* May or may not be actioned
-* What happens when the app isn't installed?
+# Wait until they open the app (may or may not be 10+ years)
+
+![bg right width:400px](images/bot.png)
+
+---
+
+## Conversation Flow
+
+# Start conversation
+
+![bg right width:400px](images/bot.png)
+
+---
+
+## Not a good User Experience
+
+# Slow
+
+![bg right width:500px](images/angry.webp)
+
+---
+## Not a good User Experience
+
+# Requires a lot of steps
+
+![bg right width:500px](images/angry.webp)
+
+---
+## Not a good User Experience
+
+# May or may not be actioned
+
+![bg right width:500px](images/angry.webp)
+
+---
+## Not a good User Experience
+
+# What happens when the app isn't installed?
 
 ![bg right width:500px](images/angry.webp)
 
 ---
 
-# How do we improve this?
+## How do we improve this?
 
-* Better guarantee the user sees important info
-* Quickly start interactive conversations
+# Better guarantee the user sees important info
 
 ![bg right width:600px](images/Vonage-API-Platform.svg)
 
 
 ---
 
-# Communication APIs
+## How do we improve this?
 
-* A way to provide new experiences
-* Platform independent
-* Add communication channels to your application
+# Quickly start interactive conversations
+
+![bg right width:600px](images/Vonage-API-Platform.svg)
+
+
+---
+
+## Communication APIs
+
+# A way to provide new experiences
 
 ![bg right width:500px](images/Enterprise_Image.svg)
 
 ---
 
-# SMS
+## Communication APIs
 
-* Send and receive SMS via code
-* Create bot flows via text
+# Platform independent
+
+![bg right width:500px](images/Enterprise_Image.svg)
+
+---
+
+## Text
+
+# Send and receive Text Messages via code
 
 ![bg right width:500px](images/sms.svg)
 
 ---
 
-# Voice
+## Voice
 
-* App - App
-* App - Phone
-* Phone - App
-* Automated Text to Speach
+# App to App, App to Phone, Text to Speach
 
 ![bg right width:500px](images/voice.svg)
 
 ---
 
-# Video
+## Video
 
-* 1 to 1 Video
-* Multi Video
-* Meetings
-* Screen sharing
+# Screen sharing, live streaming, meetings
 
 ![bg right width:500px](images/video.png)
 
 ---
 
 # Vonage Communication APIs
-
-
-* Voice, Video, SMS etc.
-* Self-service
 
 
 ![bg right width:500px](images/Vonage_Logo_black.png)
@@ -218,7 +367,7 @@ Stat source https://www.redeye.com/resources/sms-marketing-vs-email-marketing-wh
 
 # SMS Alerts 
 
-* Stock alerts for high demand items (PS5)
+* Stock alerts for high demand items
 * User signs up via an app
 * Selected SMS alerts
 * Direct alerts sent even if the app is no longer installed
@@ -231,32 +380,23 @@ Stat source https://www.redeye.com/resources/sms-marketing-vs-email-marketing-wh
 
 ---
 
-# SMS Alerts
+# SMS Alerts - NodeJS
 
-```java
-TextMessage message = new TextMessage(VONAGE_BRAND_NAME,
-    TO_NUMBER,
-    "A text message sent using the Vonage SMS API"
-);
+```javascript
+const from = VONAGE_BRAND_NAME
+const to = TO_NUMBER
+const text = 'PS5 is now in stock!'
 
-SmsSubmissionResponse response = client.getSmsClient().submitMessage(message);
-
-if (response.getMessages().get(0).getStatus() == MessageStatus.OK) {
-    System.out.println("Message sent successfully.");
-} else {
-    System.out.println(response.getMessages().get(0).getErrorText());
-}
+await vonage.sms.send({to, from, text})
+.then(resp => { 
+    console.log('Message sent successfully'); 
+    console.log(resp); 
+})
+.catch(err => { 
+    console.log('There was an error sending the messages.'); 
+    console.error(err); 
+});
 ```
-
----
-
-# Voice Help Desk
-
-* Build the "call" button into the app
-* Audio call started from within the app
-* User never leaves your app
-
-![bg right width:500px](images/voice.svg)
 
 ---
 
@@ -264,12 +404,24 @@ if (response.getMessages().get(0).getStatus() == MessageStatus.OK) {
 
 * Museum has a physical phone help desk
 * Calling in foreign countries is expensive
-* Free for the user
-* Process doesn't change 
 
 ![bg right width:500px](images/museum.jpeg)
 
 ---
+
+# Voice Help Desk
+
+* Build the "call" button into the app
+* Audio call within the app
+* User never leaves your app
+* Process doesn't change 
+
+
+![bg right width:500px](images/voice.svg)
+
+---
+
+# Voice Help Desk - Kotlin
 
 ```kotlin
 var client = NexmoClient.Builder().build(this)
@@ -306,35 +458,26 @@ client.serverCall("PHONE_NUMBER",
 
 ---
 
-```kotlin
-private var session: Session? = null
-private var publisher: Publisher? = null
-private var subscriber: Subscriber? = null
+# In App Video Support - Kotlin
 
+```kotlin
 private val sessionListener: Session.SessionListener = object : Session.SessionListener {
     override fun onConnected(session: Session) {
         publisher = Publisher.Builder(activity).build()
         session.publish(publisher)
     }
-
-    override fun onDisconnected(session: Session) {}
-
     override fun onStreamReceived(session: Session, stream: Stream) {
         if (subscriber == null) {
             subscriber = Subscriber.Builder(activity, stream).build()
             session.subscribe(subscriber)
         }
     }
-
     override fun onStreamDropped(session: Session, stream: Stream) {
         if (subscriber != null) {
             subscriber = null
         }
     }
-
-    override fun onError(session: Session, opentokError: OpentokError) {}
 }
-
 session = Session.Builder(activity, apiKey, sessionId).build()
 session?.setSessionListener(sessionListener)
 session?.connect(token)
@@ -357,8 +500,7 @@ session?.connect(token)
 
 # Get started!
 
-* Join us at the Vonage booth! 
-* Sign up at developer.vonage.com
+## Sign up at developer.vonage.com
 
 ![bg right width:600px](images/Vonage-API-Platform.svg)
 
@@ -372,4 +514,4 @@ session?.connect(token)
 
 polywork.com/devwithzachary
 
-github.com/devwithzachary/presentations
+<font size=5>github.com/devwithzachary/presentations</font>
