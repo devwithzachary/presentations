@@ -11,6 +11,14 @@ npx @marp-team/marp-cli@latest -w slide-deck.md
 
 # 2022
 
+## Using Communication APIs to enhance your UX
+
+- [Source](https://github.com/devwithzachary/presentations/tree/main/communication-apis-enhance-ux)
+- [Deck](https://devwithzachary.github.io/presentations/communication-apis-enhance-ux/deck.html)
+- [Video From Droidcon Berlin](https://www.droidcon.com/2022/08/02/using-communication-apis-to-enhance-your-ux-and-reduce-notifications/)
+
+Talk given both on Day two of Droidcon Berlin 2022 and at Mordern Frontends Live including a rant on why notifications now suck and how we can better communicate with users.
+
 ## How Vonage Moved its SDKs to KMP and saved the world (kind of)
 - [Source](https://github.com/devwithzachary/presentations/tree/main/kotlin-multiplatform-saved-the-world)
 - [Deck](https://devwithzachary.github.io/presentations/kotlin-multiplatform-saved-the-world/deck.html)
@@ -34,14 +42,6 @@ Keynote talk given at [Chicago Reoboto 2022](https://chicagoroboto.com/)
 - [Video](https://www.droidcon.com/2022/08/01/linuxonandroid-reviving-a-10-year-old-android-project/)
 
 Talk given on Day three of Droidcon Berlin 2022 centered around the LinuxOnAndroid project, what is is, and the lessons I've learned when trying to rebuild a 10+ year old android project.
-
-## Using Communication APIs to enhance your UX
-
-- [Source](https://github.com/devwithzachary/presentations/tree/main/communication-apis-enhance-ux)
-- [Deck](https://devwithzachary.github.io/presentations/communication-apis-enhance-ux/deck.html)
-- [Video](https://www.droidcon.com/2022/08/02/using-communication-apis-to-enhance-your-ux-and-reduce-notifications/)
-
-Talk on Day two of Droidcon Berlin 2022 including a rant on why notifications now suck and how we can better communicate with users.
 
 ## Vonage ❤️ Quick Apps
 
