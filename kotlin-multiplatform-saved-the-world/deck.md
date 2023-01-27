@@ -1,55 +1,59 @@
 ---
 marp: true
-header: 'How Vonage Moved its SDKs to KMP and saved the world (kind of)'
-footer: 'Zachary Powell (@devwithzachary)/Ashley Arthur (@ishley30)'
+header: 'How Vonage Moved its SDKs to Kotlin Multiplatform  and saved the world'
+footer: 'androiddev.social@devwithzachary / @ishley30'
 theme: default
+style: |
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  section {
+    font-family: font-family: 'Roboto', sans-serif;
+  }
 ---
 
 # How Vonage Moved its Client SDKs to Kotlin Multiplatform 
-## and saved the world 
-## (kind of)
-
-![bg right width:500px](images/kotlin-super-hero.png)
+## and saved the world (kind of)
 
 ---
 
 ## Intros
 # Ashley Arthur
 ## Software Dev Engineer 
-The brains behind the talk - @ishley30
+The brains behind the talk
+@ishley30
 
-![bg right width:500px](images/ashley.jpeg) 
+![bg right:40% cover](images/ashley.jpeg) 
 
 ---
 
 ## Intros
 # Zachary Powell
 ## ~~Sr Android Developer Advocate~~ Manager, DevRel
-The one that gets to stand up here and talk to you. - @devwithzachary
+The one that gets to talk to you. 
+androiddev.social@devwithzachary
 
-![bg right width:500px](images/me-talk.jpeg) 
+![bg right:40% ](images/me-talk.jpeg) 
 
 ---
 
 # Takeaways
 
-![bg right width:600px](images/pizza.jpeg) 
+![bg right:40%](images/pizza.jpeg) 
 
 ---
 
 ## Takeaways
 
-# Not another KMP code talk.  
+# Not another Kotlin Multiplatform code talk.  
 
-![bg right width:300px](images/cross.png) 
+![bg right:40%](images/cross.png) 
 
 ---
 
 ## Takeaways
 
-# A real world example of a team building a library in KMP
+# Real world example of a team building a library in Kotlin Multiplatform
 
-![bg right width:300px](images/tick.png) 
+![bg right:40%](images/tick.png) 
 
 ---
 
@@ -57,7 +61,7 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 
 # Learn from the pain
 
-![bg right width:600px](images/painscale.jpeg) 
+![bg right:40% contain](images/painscale.jpeg) 
 
 * History of the SDK's
 * Past attempts at codeshare
@@ -68,9 +72,9 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 
 # See the success!
 
-![bg right width:600px](images/states-of-a-programmer.png) 
+![bg right:40% contain](images/states-of-a-programmer.png) 
 
-* Improvements KMP made
+* Improvements Kotlin Multiplatform made
 * The SDKs now
 * Suprising improvements
 
@@ -78,7 +82,7 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 
 # What are the Vonage Client SDKs?
 
-![bg right width:500px](images/Vonage_Logo_black.png) 
+![bg right:40% contain](images/Vonage_Logo_black.png) 
 
 ---
 
@@ -86,7 +90,7 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 
 # Android, iOS and JS SDKs
 
-![bg right width:500px](images/clients.png) 
+![bg right:40% contain](images/clients.png) 
 
 ---
 
@@ -94,15 +98,16 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 
 # Wrappers for the Vonage REST/WebRTC APIs
 
-![bg right width:500px](images/Vonage-API-Platform.svg) 
+![bg right:40% contain](images/Vonage-API-Platform.svg) 
 
 ---
 
 ## What are the Vonage Client SDKs?
 
 # Make it easier to use the Vonage APIs in a native friendly way
+# Developers are our world.
 
-![bg right width:500px](images/voice.svg) 
+![bg right:40% contain](images/voice.svg) 
 
 ---
 
@@ -119,31 +124,31 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 * New features written by three separate teams
 * 3x the work to implement something new
 
-![bg right width:500px](images/nexmo-logo.png)
+![bg right:40% contain](images/nexmo-logo.png)
 
 ---
 
 
 # Nexmo was bought by Vonage.
 
-![bg right width:500px](images/nexmo-vonage.jpeg)
+![bg right:40% contain](images/nexmo-vonage.jpeg)
 
 ---
 
 # Rewrite!
 
-![bg right width:500px](images/SANDCASTLES.png)
+![bg right:40% contain](images/SANDCASTLES.png)
 
 ---
 
 ## Kotlin Multiplatform try 1
 
-* JS team took a look at KMP at a VERY early stage
-* They wanted to rebuild EVERYTHING in KMP
+* JS team took a look at Kotlin Multiplatform at a VERY early stage
+* They wanted to rebuild EVERYTHING in Kotlin Multiplatform
 * This failed.
 * But we still want shared code!
 
-![bg right width:500px](images/kotlin-text.png)
+![bg right:40% contain](images/kotlin-text.png)
 
 ---
 
@@ -152,13 +157,13 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 * Allowed for some codeshare
 * Base level with platform specific code written on top.
 
-![bg right width:400px](images/c++.png)
+![bg right:40% contain](images/c++.png)
 
 ---
 
 # Happy Codeshare! Right?!
 
-![bg right width:600px](images/happy.jpeg)
+![bg right:40% contain](images/happy.jpeg)
 
 ---
 
@@ -172,13 +177,13 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 * C++ code wasn't accessible to all on the team. 
 * Very slow builds limiting release cadence
 
-![bg right width:500px](images/codeshare.png)
+![bg right:40% contain](images/codeshare.png)
 
 ---
 
 # Rewrite!
 
-![bg right width:600px](images/tired.png)
+![bg right:40% ](images/tired.png)
 
 ---
 
@@ -187,13 +192,13 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 * Shared code, just better
 * Share business logic, not low-level platform stuff
 
-![bg right width:500px](images/perfect.png)
+![bg right:40% contain](images/perfect.png)
 
 ---
 
 ## What options?
 
-![bg right width:500px](images/options.png)
+![bg right:40% contain](images/options.png)
 
 ---
 
@@ -208,7 +213,7 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 * Doesn't solve binding issues. 
 * Tooling for native was relatively unknown.
 
-![bg right width:500px](images/rust.png)
+![bg right:40% contain](images/rust.png)
 
 ---
 
@@ -218,7 +223,7 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 * Bindings solved! 
 * Let's Prototype
 
-![bg right width:500px](images/kotlin-text.png)
+![bg right:40% contain](images/kotlin-text.png)
 
 ---
 
@@ -226,18 +231,18 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 
 * December 2021, Perfect time to hide and build the prototype.
 * Very careful about what to put into the shared code
-* KMP for business logic. Platform specific code stays out!
+* Kotlin Multiplatform for business logic. Platform specific code stays out!
 
-![bg right width:500px](images/perfect.png)
+![bg right:40% contain](images/perfect.png)
 
 ---
 
 ## Platform Specific
 
 * Networking - HTTP client, WebSocket, WebRTC client.
-* Platform specific exposed behind interfaces for KMP to access.
+* Platform specific exposed behind interfaces for Kotlin Multiplatform to access.
 
-![bg right width:600px](images/webrtc.png)
+![bg right:40% contain](images/webrtc.png)
 
 ---
 
@@ -245,7 +250,7 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 
 # And it worked!
 
-![bg right width:500px](images/SANDCASTLES.png)
+![bg right:40% contain](images/SANDCASTLES.png)
 
 ---
 
@@ -255,19 +260,19 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 
 # Ashley dared to have a baby (congratulations)
 
-![bg right width:500px](images/surpise.jpeg)
+![bg right:40%](images/surpise.jpeg)
 
 ---
 
 # Team members left
 
-![bg right width:500px](images/deadpool.jpeg)
+![bg right:40%](images/deadpool.jpeg)
 
 ---
 
 # Team had to focus on bug fixing in the current SDK
 
-![bg right width:500px](images/startrek.jpeg)
+![bg right:40%](images/startrek.jpeg)
 
 ---
 
@@ -277,13 +282,13 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 
 # The team is reminded of the pain points
 
-![bg right width:500px](images/cry.jpeg)
+![bg right:40%](images/cry.jpeg)
 
 ---
 
 # Ashley returns! 
 
-![bg right width:500px](images/ash.jpeg)
+![bg right:40%](images/ash.jpeg)
 
 ---
 
@@ -299,7 +304,7 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 
 # Focus had just been on iOS and Android, JS was needed as well!
 
-![bg right width:500px](images/js.png)
+![bg right:40%](images/js.png)
 
 ---
 
@@ -311,7 +316,7 @@ The one that gets to stand up here and talk to you. - @devwithzachary
 # Team had to learn Kotlin 
 mix of Android, iOS and JS devs
 
-![bg right width:500px](images/kotlin-text.png)
+![bg right:40% contain](images/kotlin-text.png)
 
 ---
 
@@ -319,7 +324,7 @@ mix of Android, iOS and JS devs
 
 This made iOS devs sad.
 
-![bg right width:600px](images/gradle.png)
+![bg right:40% contain](images/gradle.png)
 
 ---
 
@@ -327,19 +332,21 @@ This made iOS devs sad.
 
 A lot of the team had been using their own preferred IDE/text editors for the shared C++ code.
 
-![bg right width:400px](images/androidstudio.png)
+![bg right:40% contain](images/androidstudio.png)
 
 ---
 
 ## Today!
 
-# Vonage Client SDK for Voice in beta
+# Vonage Client SDK for Voice released!
 
-With others coming soon™️
+Vonage Client SDK for Chat releasing end of Q1
 
 ---
 
 # Lessons Learnt / Reflection
+
+What changed?
 
 ---
 
@@ -350,6 +357,8 @@ still getting pretty large updates, but they are kept behind feature flags
 ---
 
 # Original pain point of consistency has been removed!
+
+Write once for everywhere!
 
 ---
 
@@ -367,11 +376,13 @@ unlike before with C++/SDK
 
 # Move to a Mono repo
 
+Whole team synced across all platforms
+
 ---
 
 # We have tests! 
 
-(Tests are the key to saving the world.)
+Tests are the key to saving developers (which are our world!)
 
 ![bg right width:500px](images/kotlin-super-hero.png)
 
@@ -379,21 +390,13 @@ unlike before with C++/SDK
 
 # Go check out the SDKs
 
-developer.vonage.com/tools
+Coupon Code: <b>XXXXXXX</b>
 
-![bg right width:400px](images/sdks.svg)
+developer.vonage.com
 
----
+github.com/Vonage-Community/tutorials-client_sdk-ios-android-js
 
-# See you at Droidcon!
-
-![bg right width:400px](images/android-figs.jpeg)
-
----
-
-## Thank you!
-
-# Conversation service team @ Vonage
+![bg right:40% width:400px](images/github.SVG)
 
 ---
 
@@ -401,8 +404,8 @@ developer.vonage.com/tools
 
 ![width:200px](images/me.jpg) 
 
-![bg right width:500px](images/qr-code.png)
+![bg right:40% width:500px](images/qr-code.png)
 
 polywork.com/devwithzachary
 
-<font size=5>github.com/devwithzachary/presentations</font>
+github.com/devwithzachary/presentations
