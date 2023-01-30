@@ -74,7 +74,7 @@ androiddev.social@devwithzachary
 
 ![bg right:40% contain](images/states-of-a-programmer.png) 
 
-* Improvements Kotlin Multiplatform made
+* Main changes from old codeshare
 * The SDKs now
 * Suprising improvements
 
@@ -300,6 +300,8 @@ androiddev.social@devwithzachary
 
 # What needed to happen?
 
+![bg right:40%](images/prototype.png)
+
 ---
 
 # Focus had just been on iOS and Android, JS was needed as well!
@@ -308,8 +310,8 @@ androiddev.social@devwithzachary
 
 ---
 
-
-# Main changes had nothing to do with writing Kotlin Multiplatform code
+## I asked the team
+# What were the main changes?
 
 ---
 
@@ -342,17 +344,21 @@ A lot of the team had been using their own preferred IDE/text editors for the sh
 
 Vonage Client SDK for Chat releasing end of Q1
 
+![bg right:40% ](images/fireworks.jpg)
+
 ---
 
-# Lessons Learnt / Reflection
+## Lessons Learnt / Reflection
 
-What changed?
+# What changed?
 
 ---
 
 # Keep up to date with Kotlin updates
 
-still getting pretty large updates, but they are kept behind feature flags
+Language still getting large updates
+
+![bg right:40% contain](images/Calendar-Reminder.png)
 
 ---
 
@@ -360,11 +366,15 @@ still getting pretty large updates, but they are kept behind feature flags
 
 Write once for everywhere!
 
+![bg right:40% contain](images/Technical-Blog-Writing.png)
+
 ---
 
 # Platform code is just exposing the functionality 
 
 More time to work on improving the API contract and making the SDK a joy to use!
+
+![bg right:40% contain](images/Communications-Apps-2.png)
 
 ---
 
@@ -372,11 +382,15 @@ More time to work on improving the API contract and making the SDK a joy to use!
 
 unlike before with C++/SDK
 
+![bg right:40% contain](images/Women-in-Tech.png)
+
 ---
 
 # Move to a Mono repo
 
 Whole team synced across all platforms
+
+![bg right:40% contain](images/Team-Work.png)
 
 ---
 
@@ -384,7 +398,7 @@ Whole team synced across all platforms
 
 Tests are the key to saving developers (which are our world!)
 
-![bg right width:500px](images/kotlin-super-hero.png)
+![bg right width:500px](images/Globe-Arrows.png)
 
 ---
 
