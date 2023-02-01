@@ -1,16 +1,11 @@
 ---
-marp: true
-header: 'How Vonage Moved its SDKs to Kotlin Multiplatform  and saved the world'
+marp: false
+header: 'How We Moved SDKs to Kotlin Multiplatform  and saved the world'
 footer: 'androiddev.social@devwithzachary / @ishley30'
 theme: default
-style: |
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-  section {
-    font-family: font-family: 'Roboto', sans-serif;
-  }
 ---
 
-# How Vonage Moved its Client SDKs to Kotlin Multiplatform 
+# How We Moved SDKs to Kotlin Multiplatform 
 ## and saved the world (kind of)
 
 ---
@@ -404,7 +399,7 @@ Tests are the key to saving developers (which are our world!)
 
 # Go check out the SDKs
 
-Coupon Code: <b>XXXXXXX</b>
+Coupon Code, €10 free credit: <b>XXXXXXX</b>
 
 developer.vonage.com
 
