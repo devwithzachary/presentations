@@ -1,6 +1,6 @@
 ---
 marp: false
-header: 'How We Moved SDKs to Kotlin Multiplatform  and saved the world'
+header: 'How We Moved SDKs to Kotlin Multiplatform and saved the world'
 footer: 'androiddev.social@devwithzachary / @ishley30'
 theme: default
 ---
@@ -329,7 +329,7 @@ This made iOS devs sad.
 
 A lot of the team had been using their own preferred IDE/text editors for the shared C++ code.
 
-![bg right:40% contain](images/androidstudio.png)
+![bg right:40% contain](images/androidstudio.svg)
 
 ---
 
@@ -399,7 +399,7 @@ Tests are the key to saving developers (which are our world!)
 
 # Go check out the SDKs
 
-Coupon Code, €10 free credit: <b>XXXXXXX</b>
+Coupon Code, €10 free credit: <b>XXXXXX</b>
 
 developer.vonage.com
 
