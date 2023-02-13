@@ -15,6 +15,7 @@ npx @marp-team/marp-cli@latest -w slide-deck.md
 
 - [Source](https://github.com/devwithzachary/presentations/tree/main/developer-to-devrel-45minute)
 - [Deck](https://devwithzachary.github.io/presentations/developer-to-devrel-45minute/deck.html)
+
 - [Video from Chicago Reoboto 2022](https://www.youtube.com/watch?v=YSbUNRpDpas)
 
 In this talk, we take a look back in time at how the Android community has changed and grown from the early days of HTC Dream/T-mobile G1 and hacking about with ROMs on XDA to the massive worldwide collective of developers from all walks of life that make up the Android community today. We take a look at what makes this community so special and the lessons I have learned over the years around getting involved and being part of this community.
@@ -22,6 +23,8 @@ In this talk, we take a look back in time at how the Android community has chang
 ## How Vonage Moved its SDKs to KMP and saved the world (kind of)
 - [Source](https://github.com/devwithzachary/presentations/tree/main/kotlin-multiplatform-saved-the-world)
 - [Deck](https://devwithzachary.github.io/presentations/kotlin-multiplatform-saved-the-world/deck.html)
+
+- [Video from Android Worldwide Jan 2023](https://www.youtube.com/watch?v=DogkF2bv1gI)
 
 This year the Client SDK engineering team made the leap into the world of Kotlin Multiplatform.
 With one “simple” goal, to unify the Android, iOS and JS SDK.
@@ -32,6 +35,7 @@ But more importantly, we will talk about some surprising benefits of moving to K
 
 - [Source](https://github.com/devwithzachary/presentations/tree/main/linuxonandroid)
 - [Deck](https://devwithzachary.github.io/presentations/linuxonandroid/deck.html)
+
 - [Video from Droidcon Berlin 2022](https://www.droidcon.com/2022/08/01/linuxonandroid-reviving-a-10-year-old-android-project/)
 
 The LinuxOnAndroid project was for many years a massive success, with over a million downloads on the PlayStore and at its height a thriving community of contributors and users. However, due to real-life commitments after a few years, the project had to take a back seat and was left dormant. Now, over 10 years after it all started I took on the challenge of reviving, rebuilding and creating a new Linux on Android.
