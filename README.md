@@ -25,6 +25,7 @@ In this talk, we take a look back in time at how the Android community has chang
 - [Deck](https://devwithzachary.github.io/presentations/kotlin-multiplatform-saved-the-world/deck.html)
 
 - [Video from Android Worldwide Jan 2023](https://www.youtube.com/watch?v=DogkF2bv1gI)
+- [Video from FOSDEM 2023](https://www.youtube.com/watch?v=_y6Jtt4IoyM)
 
 This year the Client SDK engineering team made the leap into the world of Kotlin Multiplatform.
 With one “simple” goal, to unify the Android, iOS and JS SDK.
