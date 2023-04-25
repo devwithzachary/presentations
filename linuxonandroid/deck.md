@@ -1,7 +1,7 @@
 ---
 marp: true
 header: 'LinuxOnAndroid – Reviving a 10 year old Android project'
-footer: '@devwithzachary'
+footer: 'androiddev.social@devwithzachary'
 theme: default
 ---
 
@@ -14,13 +14,13 @@ Reviving a 10 year old Android project
 
 # Who am I?
 
-* Sr Android Developer Advocate at Vonage
+* DevRel Manager at Vonage
 * Android Developer for 12+ years
 * An Android enthusiast for many many years
 * Lead of the LinuxOnAndroid project
 * Four Leasons learnt by fire
 
-![bg right width:400px](images/me.jpg) 
+![bg right:40% ](images/me-talk.jpeg) 
 
 ---
 
@@ -38,7 +38,7 @@ Reviving a 10 year old Android project
 * Doesn't touch Android
 * Required Root
 
-![bg right width:300px](images/cli.jpeg)
+![bg right:40%](images/cli.jpeg)
 
 ---
 
@@ -208,8 +208,8 @@ u/patoezequiel
 
 ![width:200px](images/me.jpg) 
 
-![bg right width:400px](images/qr-code.png)
+![bg right:40% width:500px](images/qr-code.png)
 
-https://www.polywork.com/devwithzachary
+polywork.com/devwithzachary
 
-https://github.com/devwithzachary/presentations
+github.com/devwithzachary/presentations

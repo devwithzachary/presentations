@@ -1,5 +1,5 @@
 ---
-marp: false
+marp: true
 header: 'How We Moved SDKs to Kotlin Multiplatform and saved the world'
 footer: 'androiddev.social@devwithzachary / @ishley30'
 theme: default
