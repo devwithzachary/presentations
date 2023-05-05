@@ -2,7 +2,8 @@
 marp: true
 header: 'How We Moved SDKs to Kotlin Multiplatform and saved the world'
 footer: 'androiddev.social@devwithzachary / @ishley30'
-theme: default
+theme: default-dark
+class: invert
 ---
 
 # How We Moved SDKs to Kotlin Multiplatform 
@@ -77,7 +78,7 @@ androiddev.social@devwithzachary
 
 # What are the Vonage Client SDKs?
 
-![bg right:40% contain](images/Vonage_Logo_black.png) 
+![bg right:40% contain](images/Vonage_Logo_White.png) 
 
 ---
 
@@ -119,14 +120,14 @@ androiddev.social@devwithzachary
 * New features written by three separate teams
 * 3x the work to implement something new
 
-![bg right:40% contain](images/nexmo-logo.png)
+![bg right:40% contain](images/nexmo-logo-blue.png)
 
 ---
 
 
 # Nexmo was bought by Vonage.
 
-![bg right:40% contain](images/nexmo-vonage.jpeg)
+![bg right:40% contain](images/nexmo-logo-vonage.png)
 
 ---
 
@@ -329,7 +330,7 @@ This made iOS devs sad.
 
 A lot of the team had been using their own preferred IDE/text editors for the shared C++ code.
 
-![bg right:40% contain](images/androidstudio.svg)
+![bg right:40% contain](images/studio-logo.png)
 
 ---
 
@@ -337,7 +338,7 @@ A lot of the team had been using their own preferred IDE/text editors for the sh
 
 # Vonage Client SDK for Voice released!
 
-Vonage Client SDK for Chat releasing end of Q1
+Vonage Client SDK for Chat releasing end of Q2
 
 ![bg right:40% ](images/fireworks.jpg)
 
