@@ -246,7 +246,7 @@ androiddev.social@devwithzachary
 
 # And it worked!
 
-![bg right:40% contain](images/SANDCASTLES.png)
+![bg right:40% contain](images/rex.jpeg)
 
 ---
 
@@ -400,7 +400,7 @@ Tests are the key to saving developers (which are our world!)
 
 # Go check out the SDKs
 
-Coupon Code, €10 free credit: <b>XXXXXX</b>
+Coupon Code, €10 free credit: <b>23ENDAPP10</b>
 
 developer.vonage.com
 
