@@ -1,7 +1,7 @@
 ---
 marp: true
 header: 'How We Moved SDKs to Kotlin Multiplatform and saved the world'
-footer: 'androiddev.social@devwithzachary / @ishley30'
+footer: '@devwithzachary / @ishley30'
 theme: default-dark
 class: invert
 ---
@@ -25,7 +25,7 @@ The brains behind the talk
 # Zachary Powell
 ## ~~Sr Android Developer Advocate~~ Manager, DevRel
 The one that gets to talk to you. 
-androiddev.social@devwithzachary
+@DevWithZachary
 
 ![bg right:40% ](images/me-talk.jpeg) 
 
@@ -338,7 +338,17 @@ A lot of the team had been using their own preferred IDE/text editors for the sh
 
 # Vonage Client SDK for Voice released!
 
-Vonage Client SDK for Chat releasing end of Q2
+iOS, Android and Javascript!
+
+![bg right:40% ](images/fireworks.jpg)
+
+---
+
+## Coming Soon!
+
+# Vonage Client SDK for Chat!
+
+iOS, Android and Javascript!
 
 ![bg right:40% ](images/fireworks.jpg)
 
@@ -400,7 +410,7 @@ Tests are the key to saving developers (which are our world!)
 
 # Go check out the SDKs
 
-Coupon Code, €10 free credit: <b>23ENDAPP10</b>
+Coupon Code, €10 free credit: <b>23CDLIS10</b>
 
 developer.vonage.com
 
@@ -414,8 +424,8 @@ github.com/Vonage-Community/tutorials-client_sdk-ios-android-js
 
 ![width:200px](images/me.jpg) 
 
-![bg right:40% width:500px](images/qr-code.png)
+![bg right:40% width:500px](images/out.svg)
 
-polywork.com/devwithzachary
+links.zpweb.site
 
 github.com/devwithzachary/presentations
