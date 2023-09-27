@@ -424,7 +424,7 @@ github.com/Vonage-Community/tutorials-client_sdk-ios-android-js
 
 ![width:200px](images/me.jpg) 
 
-![bg right:40% width:500px](images/out.svg)
+![bg right:40% width:500px](images/out.SVG)
 
 links.zpweb.site
 
