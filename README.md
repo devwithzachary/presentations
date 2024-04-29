@@ -11,26 +11,21 @@ npx @marp-team/marp-cli@latest -w slide-deck.md
 
 # Current Talks
 
-## From Developer to DevRel, How the Android community helped me grow - Keynote
-
-- [Source](https://github.com/devwithzachary/presentations/tree/main/developer-to-devrel-45minute)
-- [Deck](https://devwithzachary.github.io/presentations/developer-to-devrel-45minute/deck.html)
-
-- [Video from Chicago Reoboto 2022](https://www.youtube.com/watch?v=YSbUNRpDpas)
-
-In this talk, we take a look back in time at how the Android community has changed and grown from the early days of HTC Dream/T-mobile G1 and hacking about with ROMs on XDA to the massive worldwide collective of developers from all walks of life that make up the Android community today. We take a look at what makes this community so special and the lessons I have learned over the years around getting involved and being part of this community.
-
 ## How Vonage Moved its SDKs to KMP and saved the world (kind of)
 - [Source](https://github.com/devwithzachary/presentations/tree/main/kotlin-multiplatform-saved-the-world)
 - [Deck](https://devwithzachary.github.io/presentations/kotlin-multiplatform-saved-the-world/deck.html)
 
 - [Video from Android Worldwide Jan 2023](https://www.youtube.com/watch?v=DogkF2bv1gI)
 - [Video from FOSDEM 2023](https://www.youtube.com/watch?v=_y6Jtt4IoyM)
+- [Video from AppDevCon 2023](https://appdevcon.nl/session/how-we-moved-sdks-to-kotlin-multiplatform-and-saved-the-world-kind-of/)
 
 This year the Client SDK engineering team made the leap into the world of Kotlin Multiplatform.
 With one “simple” goal, to unify the Android, iOS and JS SDK.
 We take a dive into why the team wanted to make this move, the history of the SDK and multiplatform efforts up until that point and finally how the new SDK was built!
 But more importantly, we will talk about some surprising benefits of moving to Kotlin Multiplatform and how this might be the solution for your next multi-platform project!
+
+
+# Retired Talks
 
 ## LinuxOnAndroid
 
@@ -41,7 +36,15 @@ But more importantly, we will talk about some surprising benefits of moving to K
 
 The LinuxOnAndroid project was for many years a massive success, with over a million downloads on the PlayStore and at its height a thriving community of contributors and users. However, due to real-life commitments after a few years, the project had to take a back seat and was left dormant. Now, over 10 years after it all started I took on the challenge of reviving, rebuilding and creating a new Linux on Android.
 
-# Retired Talks
+
+## From Developer to DevRel, How the Android community helped me grow - Keynote
+
+- [Source](https://github.com/devwithzachary/presentations/tree/main/developer-to-devrel-45minute)
+- [Deck](https://devwithzachary.github.io/presentations/developer-to-devrel-45minute/deck.html)
+
+- [Video from Chicago Reoboto 2022](https://www.youtube.com/watch?v=YSbUNRpDpas)
+
+In this talk, we take a look back in time at how the Android community has changed and grown from the early days of HTC Dream/T-mobile G1 and hacking about with ROMs on XDA to the massive worldwide collective of developers from all walks of life that make up the Android community today. We take a look at what makes this community so special and the lessons I have learned over the years around getting involved and being part of this community.
 
 ## Crossplatform Authentication
 
