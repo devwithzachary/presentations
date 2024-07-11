@@ -1,37 +1,43 @@
 ---
 marp: true
-header: 'AI is dead, long live AK: Exploring AI vs. Artificial Knowledge'
+header: 'AI is Dead, Long Live AK: Exploring Intelligence vs. Knowledge'
 footer: 'Zachary Powell - DevRel Manager At Vonage - @devwithzachary'
 theme: default
 class: invert
 ---
 
-# AI is dead, long live AK
-## Exploring Artificial Intelligence vs. Artificial Knowledge
+# AI is Dead, Long Live AK
+## Exploring Intelligence vs. Knowledge
 
 ---
 
-# Artificial Intelligence in fiction
+# WARNING: This Talk Includes QR Codes
+
+![bg right:40% width:500px](images/rick.png)
+
+---
+
+# Artificial Intelligence in Fiction
 
 ![bg right:55% ](images/data.webp)
 
 ---
 
-## Artificial Intelligence in fiction
+## Artificial Intelligence in Fiction
 # The Good
 
 ![bg right:50% ](images/droids.png)
 
 ---
 
-## Artificial Intelligence in fiction
+## Artificial Intelligence in Fiction
 # The Bad
 
 ![bg right:50% ](images/hal.png)
 
 ---
 
-## Artificial Intelligence in fiction
+## Artificial Intelligence in Fiction
 
 * Think
 * Learn
@@ -41,13 +47,13 @@ class: invert
 
 ---
 
-# Artificial Intelligence in reality
+# Artificial Intelligence in Reality
 
-![bg right:55% ](images/chatgpt.png)
+![bg right:55% ](images/elektro.webp)
 
 ---
 
-## Artificial Intelligence in reality
+## Artificial Intelligence in Reality
 
 # Narrow AI
 
@@ -55,7 +61,7 @@ Focused on one narrow task.
 
 ---
 
-## Artificial Intelligence in reality
+## Artificial Intelligence in Reality
 
 # Narrow AI
 - Think
@@ -66,51 +72,51 @@ Focused on one narrow task.
 
 ---
 
-## Artificial Intelligence in reality
+## Artificial Intelligence in Reality
 
 # Narrow AI
-- Think
+- <span style="color:orange;">?</span> Think
 - Learn
 - Reasoning
 - Emotional Understanding
-- <span style="color:red;">✗</span> ~~Self-Awareness~~ 
+- Self-Awareness
 
 ---
 
-## Artificial Intelligence in reality
+## Artificial Intelligence in Reality
 
 # Narrow AI
-- Think
-- Learn
+- <span style="color:orange;">?</span> Think
+- <span style="color:green;">✓</span> Learn
 - Reasoning
-- <span style="color:red;">✗</span> ~~Emotional Understanding~~
-- <span style="color:red;">✗</span> ~~Self-Awareness~~
+- Emotional Understanding
+- Self-Awareness
 
 ---
 
-## Artificial Intelligence in reality
+## Artificial Intelligence in Reality
 
 # Narrow AI
-- Think
-- Learn
+- <span style="color:orange;">?</span> Think
+- <span style="color:green;">✓</span> Learn
 - <span style="color:green;">✓</span> Reasoning 
-- <span style="color:red;">✗</span> ~~Emotional Understanding~~
-- <span style="color:red;">✗</span> ~~Self-Awareness~~
+- Emotional Understanding
+- Self-Awareness
 
 ---
 
-## Artificial Intelligence in reality
+## Artificial Intelligence in Reality
 
 # Narrow AI
-- Think
+- <span style="color:orange;">?</span> Think
 - <span style="color:green;">✓</span> Learn
 - <span style="color:green;">✓</span> Reasoning 
 - <span style="color:red;">✗</span> ~~Emotional Understanding~~
-- <span style="color:red;">✗</span> ~~Self-Awareness~~
+- Self-Awareness
 
 ---
 
-## Artificial Intelligence in reality
+## Artificial Intelligence in Reality
 
 # Narrow AI
 - <span style="color:orange;">?</span> Think
@@ -126,17 +132,17 @@ Focused on one narrow task.
 
 ---
 
-# (Current) AI limitations
+# (Current) AI Limitations
 
 ---
 
-## (Current) AI limitations
+## (Current) AI Limitations
 
-# Generative Content that required "Thought".
+# Generative Content That Required Creative "Thought".
 
 ---
 
-## (Current) AI limitations
+## (Current) AI Limitations
 
 # Write a crochet pattern of an amigurumi chicken
 
@@ -148,7 +154,7 @@ Focused on one narrow task.
 
 ---
 
-## (Current) AI limitations
+## (Current) AI Limitations
 
 # Write a crochet pattern of an amigurumi monster
 
@@ -160,7 +166,7 @@ Focused on one narrow task.
 
 ---
 
-## (Current) AI limitations
+## (Current) AI Limitations
 
 # Write a crochet pattern of an amigurumi frog
 
@@ -172,13 +178,7 @@ Focused on one narrow task.
 
 ---
 
-## (Current) AI limitations
-
-# Confidently Wrong
-
----
-
-## (Current) AI limitations
+## (Current) AI Limitations
 
 # Contextual Thought
 
@@ -189,6 +189,21 @@ Focused on one narrow task.
 
 Source - https://x.com/i/status/1808188513512575179
 
+---
+
+## (Current) AI Limitations
+
+# Confidently Wrong 
+
+![bg right:55% width:700px ](images/bard.webp)
+
+---
+
+## (Current) AI Limitations
+
+# Easily Manipulated 
+
+![bg right:40% width:450px ](images/dpd.jpeg)
 
 ---
 
@@ -197,16 +212,26 @@ Source - https://x.com/i/status/1808188513512575179
 ---
 
 ## Artificial Knowledge Success
-# Boiler plate code
+# Boiler Plate Code
 
 ![bg right:40% width:500px](images/boiler-plate.png)
 
 ---
 
 ## Artificial Knowledge Success
-# Voice Transcription and sentiment analysis
+# Voice Transcription and Sentiment Analysis
 
 ---
+
+## Artificial Knowledge Success
+# Voice Transcription and Sentiment Analysis
+
+https://developer.vonage.com/en/voice/voice-api/concepts/recording
+
+![bg right:40% width:500px](images/voice-api.png)
+
+---
+
 ``` json
 "transcript": [
         {
@@ -243,16 +268,7 @@ Source - https://x.com/i/status/1808188513512575179
 ---
 
 ## Artificial Knowledge Success
-# Voice Transcription and sentiment analysis
-
-https://developer.vonage.com/en/voice/voice-api/concepts/recording#transcription-beta
-
-![bg right:40% width:500px](images/voice-api.png)
-
----
-
-## Artificial Knowledge Success
-# Medical diagnostics
+# Medical Diagnostics
 
 Detecting novel systemic biomarkers in external eye photos
 
@@ -262,32 +278,49 @@ https://research.google/blog/detecting-novel-systemic-biomarkers-in-external-eye
 
 ---
 
-# The issue with "AI"
+# The Issue with "AI"
 
 Ethical implications of misrepresenting AI as intelligent
 
 ---
 
-##  The issue with "AI"
+##  The Issue with "AI"
 # Trust
 
 ---
 
-##  The issue with "AI"
+##  The Issue with "AI"
 # Accountability
 
 ---
 
-# AI is dead, long live AK
+# AI is Dead, Long Live AK
 But are we too late?
+
+---
+
+# In Summery
+
+* Real world "AI" is far from the fictional definition 
+* Todays "AI" aligns more with Artifical Knowledge
+* "Art" created by "AI" can be horrifying.
+* If one person starts calling it Artifical Knowledge I will be happy
 
 ---
 
 # Disclaimer
 
-My wife is a very good crocheter and the AI generated partners are not a good example of her skills...so have this dino.
+My wife is a very good crocheter and the AI generated pattern are not a good example of her skills...so have this dino.
+
+**@treblemakerdesign**
 
 ![bg right:40% width:500px](images/peggy.jpeg)
+
+---
+
+# Checkout the Booth
+
+Come chat about ~~AI~~ AK, Communication APIs, my love for Star Wars... anything!
 
 ---
 
