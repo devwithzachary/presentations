@@ -11,6 +11,12 @@ npx @marp-team/marp-cli@latest -w slide-deck.md
 
 # Current Talks
 
+## Building a Kotlin Multiplatform Library in 10 Minutes. Why Not?
+- [Source](https://github.com/devwithzachary/presentations/tree/main/kotlin-multiplatform-library-in-10-minutes)
+- [Deck](https://devwithzachary.github.io/presentations/kotlin-multiplatform-library-in-10-minutes/deck.html)
+
+With OpenAPI, developers can work together to clearly define the API contact and ensure all ambiguity is removed. These specifications can then be used to streamline the process of creating a Kotlin Multiplatform Library to consume and use these APIs.
+
 ## AI is dead, long live AK: Exploring Intelligence vs. Knowledge
 - [Source](https://github.com/devwithzachary/presentations/tree/main/ai-is-dead-long-live-ak)
 - [Deck](https://devwithzachary.github.io/presentations/ai-is-dead-long-live-ak/deck.html)
