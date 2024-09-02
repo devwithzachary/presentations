@@ -35,12 +35,16 @@ class: invert
 * Networking
 * Plus many many more.....
 
+![bg right:40% ](images/library.png) 
+
 ---
 
 # Application Programming Interfaces (APIs) 
 
 * Third Party APIs 
 * Internal APIs
+
+![bg right:40% ](images/code.png) 
 
 ---
 
@@ -51,9 +55,15 @@ class: invert
 * Time consuming
 * Ambiguity
 
+![bg right:40% width 100% ](images/code-handover.jpeg) 
+
 ---
 
-# Lets fix that with.... Libraries!
+# <span style="font-size: 140px;">Lets fix that with...</span>
+
+---
+
+# <span style="font-size: 120px;">Generating Libraries!</span>
 
 ---
 
@@ -76,15 +86,21 @@ class: invert
 
 ---
 
-# Have you heard of OpenAPI?
+# Have you heard of OpenAPI? 
+
+![bg right:40% width 100% ](images/openapi_light.png) 
 
 ---
 
 # Do you use OpenAPI?
 
+![bg right:40% width 100% ](images/openapi_light.png) 
+
 ---
 
 # What is OpenAPI?
+
+![bg right:40% width 100% ](images/openapi_light.png) 
 
 ---
 
@@ -96,6 +112,8 @@ class: invert
 ## What is OpenAPI?
 
 # OpenAPI Documents
+
+![bg right:40% width 100% ](images/openapi_light.png) 
 
 ---
 
@@ -152,6 +170,8 @@ version: 1.0.1
 
 # But Why?
 
+![bg right:40% width 100% ](images/why.jpg) 
+
 ---
 
 ## But Why?
@@ -170,11 +190,15 @@ version: 1.0.1
 * <b>Code Generation</b>
 * openapi.tools
 
+![bg right:50% width 100% ](images/tools.jpg) 
+
 ---
 
 # Vonage SMS API
 
 https://developer.vonage.com/en/api/sms
+
+![bg right:40% width:100%](images/VonagePOE.png) 
 
 ---
 ```json
@@ -207,6 +231,8 @@ https://developer.vonage.com/en/api/sms
 # OpenAPI Generator
 
 https://openapi-generator.tech/
+
+![bg right:40% ](images/code.png) 
 
 ---
 
@@ -280,6 +306,8 @@ java -jar ../openapi-generator-cli.jar generate
 
 # Why Not?
 
+![bg right:40% width 100% ](images/why.jpg) 
+
 ---
 
 ## Why Not?
@@ -296,7 +324,7 @@ java -jar ../openapi-generator-cli.jar generate
 
 ## Why Not?
 
-# No additiona business logic or helper functions
+# No additional business logic or helper functions
 
 ---
 
