@@ -11,6 +11,13 @@ class: invert
 
 ---
 
+<!-- _backgroundColor: red -->
+
+# <span style="color:white; font-size: 180px;">!! WARNING !!</span> 
+## <span style="color:white; font-size: 40px;"> Viewer Discretion Advised - Live Code Generation Ahead</span> 
+
+---
+
 # Zachary Powell
 ## Android Developer Since 2009
 ## Sr Android Developer Advocate
@@ -67,12 +74,7 @@ class: invert
 
 ---
 
-<!-- _backgroundColor: red -->
 
-# <span style="color:white; font-size: 180px;">!! WARNING !!</span> 
-## <span style="color:white; font-size: 40px;"> Viewer Discretion Advised - Live Code Generation Ahead</span> 
-
----
 
 ![bg contain](images/openapi_light.png) 
 
@@ -306,13 +308,13 @@ java -jar ../openapi-generator-cli.jar generate
 
 # Why Not?
 
-![bg right:40% width 100% ](images/why.jpg) 
+![bg right:40% width 100% invert](images/why.jpg) 
 
 ---
 
 ## Why Not?
 
-# Incomplete/Complex OpenAPI specs my not generate as expected
+# Incomplete/Complex OpenAPI specs may not generate as expected
 
 ---
 
@@ -336,11 +338,15 @@ java -jar ../openapi-generator-cli.jar generate
 
 # Hand made SDKs here to stay!
 
+![bg right:40% ](images/handcraft.png)
+
 ---
 
 # Checkout the new Kotlin Server SDK
 
 https://github.com/Vonage/vonage-kotlin-sdk
+
+![bg right:40% width:500px](images/Kotlin_Icon.svg)
 
 
 ---
