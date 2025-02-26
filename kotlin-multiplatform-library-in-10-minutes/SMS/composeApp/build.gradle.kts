@@ -1,4 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import java.util.*
@@ -27,6 +26,9 @@ buildConfig {
 
     val vonagePrivateKeyPath = properties.getProperty("VONAGE_TO")
     buildConfigField("VONAGE_TO", vonagePrivateKeyPath)
+
+    val vonageToken = properties.getProperty("VONAGE_TOKEN")
+    buildConfigField("VONAGE_TOKEN", vonageToken)
 }
 
 kotlin {

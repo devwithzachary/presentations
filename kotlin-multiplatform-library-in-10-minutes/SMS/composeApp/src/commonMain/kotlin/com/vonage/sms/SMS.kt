@@ -1,19 +1,21 @@
 package com.vonage.sms
 
 import org.openapitools.client.apis.DefaultApi
-import org.openapitools.client.models.SendAnSms200Response
+import org.openapitools.client.infrastructure.*
+import org.openapitools.client.models.*
 
 class SMS {
     private val platform = getPlatform()
 
     suspend fun sendSMS(text: String): String {
-        val textToSend : kotlin.String = "$text, sent from: ${platform.name}!"
+
+        val textToSend = "$text, sent from: ${platform.name}!"
         try {
             val format = DefaultApi.FormatSendAnSms.json // kotlin.String | The format of the response
-            val apiKey : kotlin.String = VONAGE_API_KEY // kotlin.String | Your API key
-            val from : kotlin.String = VONAGE_FROM // kotlin.String | The name or number the message should be sent from. Alphanumeric senderID's are not supported in all countries, see [Global Messaging](/messaging/sms/guides/global-messaging#country-specific-features) for more details. If alphanumeric, spaces will be ignored. Numbers are specified in E.164 format.
-            val to : kotlin.String = VONAGE_TO // kotlin.String | The number that the message should be sent to. Numbers are specified in E.164 format.
-            val apiSecret : kotlin.String = VONAGE_API_SECRET // kotlin.String | Your API secret. Required unless `sig` is provided
+            val apiKey : String = VONAGE_API_KEY // kotlin.String | Your API key
+            val from : String = VONAGE_FROM // kotlin.String | The name or number the message should be sent from. Alphanumeric senderID's are not supported in all countries, see [Global Messaging](/messaging/sms/guides/global-messaging#country-specific-features) for more details. If alphanumeric, spaces will be ignored. Numbers are specified in E.164 format.
+            val to : String = VONAGE_TO // kotlin.String | The number that the message should be sent to. Numbers are specified in E.164 format.
+            val apiSecret : String = VONAGE_API_SECRET // kotlin.String | Your API secret. Required unless `sig` is provided
             val sig = null // kotlin.String | The hash of the request parameters in alphabetical order, a timestamp and the signature secret. See [Signing Requests](/getting-started/concepts/signing-messages) for more details.
             val ttl = null // kotlin.Int | **Advanced**: The duration in milliseconds the delivery of an SMS will be attempted. By default Vonage attempts delivery for 72 hours, however the maximum effective value depends on the operator and is typically 24 - 48 hours. We recommend this value should be kept at its default or at least 30 minutes.
             val statusReportReq = null // kotlin.Boolean | **Advanced**: Boolean indicating if you like to receive a [Delivery Receipt](/messaging/sms/building-blocks/receive-a-delivery-receipt).
