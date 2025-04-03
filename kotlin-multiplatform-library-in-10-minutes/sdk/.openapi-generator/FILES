@@ -45,14 +45,3 @@ src/commonTest/kotlin/util/Coroutine.kt
 src/iosTest/kotlin/util/Coroutine.kt
 src/jsTest/kotlin/util/Coroutine.kt
 src/jvmTest/kotlin/util/Coroutine.kt
-src/test/kotlin/org/openapitools/client/apis/DefaultApiTest.kt
-src/test/kotlin/org/openapitools/client/models/DeliveryReceiptTest.kt
-src/test/kotlin/org/openapitools/client/models/ErrorMessageTest.kt
-src/test/kotlin/org/openapitools/client/models/ErrorTest.kt
-src/test/kotlin/org/openapitools/client/models/ErrorXmlTest.kt
-src/test/kotlin/org/openapitools/client/models/InboundMessageTest.kt
-src/test/kotlin/org/openapitools/client/models/MessageTest.kt
-src/test/kotlin/org/openapitools/client/models/SMSTest.kt
-src/test/kotlin/org/openapitools/client/models/SMSXmlTest.kt
-src/test/kotlin/org/openapitools/client/models/SendAnSms200Response1Test.kt
-src/test/kotlin/org/openapitools/client/models/SendAnSms200ResponseTest.kt

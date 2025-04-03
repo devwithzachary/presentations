@@ -36,7 +36,7 @@ class: invert
 
 # Libraries Libraries Libraries
 
-* Android SDK
+* Framework SDK's
 * Testing
 * Dependency Injector
 * Networking
@@ -238,6 +238,13 @@ https://openapi-generator.tech/
 
 ---
 
+# Servers
+
+<span style="font-size: 20px;">ada-server, aspnet-fastendpoints, aspnetcore, cpp-pistache-server, cpp-qt-qhttpengine-server, cpp-restbed-server, cpp-restbed-server-deprecated, csharp-functions, erlang-server,erlang-server-deprecated, fsharp-functions, fsharp-giraffe-server, go-echo-server, go-gin-server, go-server, graphql-nodejs-express-server, haskell, haskell-yesod, java-camel, java-helidon-server, java-inflector, java-micronaut-server, java-microprofile, java-msf4j, java-pkmst, java-play-framework, java-undertow-server, java-vertx, java-vertx-web, java-wiremock, jaxrs-cxf, jaxrs-cxf-cdi, jaxrs-cxf-extended, jaxrs-jersey, jaxrs-resteasy, jaxrs-resteasy-eap, jaxrs-spec, julia-server, kotlin-server, kotlin-spring, kotlin-vertx, kotlin-wiremock, nodejs-express-server, php-flight, php-laravel, php-lumen, php-mezzio-ph, php-slim4, php-symfony, python-aiohttp, python-blueplanet, python-fastapi, python-flask, ruby-on-rails, ruby-sinatra, rust-axum, rust-server, scala-akka-http-server, scala-cask, scala-finch, scala-http4s-server, scala-lagom-server, scala-play-server, scalatra, spring</span>
+
+
+---
+
 # Clients
 ada, android, apex, bash, c, clojure, cpp-qt-client, cpp-restsdk, cpp-tiny, cpp-tizen,  cpp-ue4, crystal, csharp, dart, dart-dio, eiffel, elixir, elm, erlang-client, erlang-proper, go, groovy, haskell-http-client, java, javascript, jaxrs-cxf-client, jetbrains-http-client, jmeter, julia-client, k6, kotlin, lua, n4js, nim, objc, ocaml, perl, php, powershell, python, r, ruby, rust, scala, scalaz, swift-combine, swift5, typescript, xojo-client, zapier
 
@@ -302,7 +309,7 @@ java -jar ../openapi-generator-cli.jar generate
 
 ---
 
-# Test Application
+# Photo Break!
 
 ---
 
@@ -344,7 +351,7 @@ java -jar ../openapi-generator-cli.jar generate
 
 # Checkout the new Kotlin Server SDK
 
-Coupon Code, €10 free credit: <b></b>
+Coupon Code, €10 free credit: <b>25DEVW10</b>
 
 https://github.com/Vonage/vonage-kotlin-sdk
 
