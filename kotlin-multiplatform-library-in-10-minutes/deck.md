@@ -351,7 +351,7 @@ java -jar ../openapi-generator-cli.jar generate
 
 # Checkout the new Kotlin Server SDK
 
-Coupon Code, €10 free credit: <b>25DEVW10</b>
+Coupon Code, €10 free credit: <b></b>
 
 https://github.com/Vonage/vonage-kotlin-sdk
 
