@@ -1,6 +1,7 @@
 package com.devwithzachary.kmppresentation
 
 import androidx.compose.runtime.Composable
+import org.jetbrains.compose.resources.DrawableResource
 
 sealed interface Slide {
     val title: String
@@ -18,6 +19,12 @@ sealed interface Slide {
     data class Code(
         override val title: String,
         val codeSnippet: String
+    ) : Slide
+
+    data class ImageSlide(
+        override val title: String,
+        val image: DrawableResource, // <--- The magic type
+        val caption: String? = null
     ) : Slide
 
     // A special slide that takes a Composable for total freedom

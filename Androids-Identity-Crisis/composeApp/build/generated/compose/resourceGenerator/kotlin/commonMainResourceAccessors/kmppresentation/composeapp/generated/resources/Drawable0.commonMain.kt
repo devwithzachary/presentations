@@ -12,6 +12,13 @@ import org.jetbrains.compose.resources.ResourceItem
 
 private const val MD: String = "composeResources/kmppresentation.composeapp.generated.resources/"
 
+@delegate:ResourceContentHash(465_939_177)
+internal val Res.drawable.android_logo: DrawableResource by lazy {
+      DrawableResource("drawable:android_logo", setOf(
+        ResourceItem(setOf(), "${MD}drawable/android_logo.png", -1, -1),
+      ))
+    }
+
 @delegate:ResourceContentHash(379_089_144)
 internal val Res.drawable.compose_multiplatform: DrawableResource by lazy {
       DrawableResource("drawable:compose_multiplatform", setOf(
@@ -21,5 +28,6 @@ internal val Res.drawable.compose_multiplatform: DrawableResource by lazy {
 
 @InternalResourceApi
 internal fun _collectCommonMainDrawable0Resources(map: MutableMap<String, DrawableResource>) {
+  map.put("android_logo", Res.drawable.android_logo)
   map.put("compose_multiplatform", Res.drawable.compose_multiplatform)
 }

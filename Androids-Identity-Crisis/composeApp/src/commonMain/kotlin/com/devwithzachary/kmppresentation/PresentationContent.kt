@@ -1,5 +1,8 @@
 package com.devwithzachary.kmppresentation
 
+import kmppresentation.composeapp.generated.resources.Res
+import kmppresentation.composeapp.generated.resources.android_logo
+
 val myPresentationSlides = listOf(
     Slide.Title(
         title = "Android's Identity Crisis",
@@ -23,5 +26,10 @@ val myPresentationSlides = listOf(
                Text("Hello Universal UI")
             }
         """.trimIndent()
-    )
+    ),
+    Slide.ImageSlide(
+            title = "The Evolution",
+    image = Res.drawable.android_logo, // This matches your filename
+    caption = "From a green robot to a multi-platform powerhouse."
+)
 )

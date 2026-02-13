@@ -6,6 +6,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import org.jetbrains.compose.resources.painterResource
+import androidx.compose.foundation.Image
 
 @Composable
 fun SlideRenderer(slide: Slide) {
@@ -52,6 +54,29 @@ fun SlideRenderer(slide: Slide) {
                         )
                     }
                 }
+
+                is Slide.ImageSlide -> {
+                    Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize().weight(1f)) {
+                        Image(
+                            painter = painterResource(slide.image),
+                            contentDescription = slide.caption ?: slide.title,
+                            modifier = Modifier
+                                .fillMaxHeight(0.8f) // Don't let it take over the title
+                                .fillMaxWidth(),
+                            contentScale = androidx.compose.ui.layout.ContentScale.Fit
+                        )
+                    }
+
+                    if (slide.caption != null) {
+                        Text(
+                            text = slide.caption,
+                            style = MaterialTheme.typography.labelLarge,
+                            fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
+                            modifier = Modifier.padding(top = 8.dp)
+                        )
+                    }
+                }
+
                 is Slide.Custom -> slide.content()
             }
         }
