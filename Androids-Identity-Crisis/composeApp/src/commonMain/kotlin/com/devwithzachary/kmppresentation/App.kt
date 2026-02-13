@@ -1,7 +1,7 @@
 package com.devwithzachary.kmppresentation
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.focusable
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
@@ -13,29 +13,28 @@ import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.input.key.*
 import kotlinx.coroutines.launch
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun App() {
     MaterialTheme {
         val pagerState = rememberPagerState(pageCount = { myPresentationSlides.size })
         val scope = rememberCoroutineScope()
-
-        // Keyboard handling for Desktop
         val focusRequester = remember { FocusRequester() }
 
-        val onNext = {
+        // Navigation Logic
+        fun goToNext() {
             if (pagerState.currentPage < myPresentationSlides.lastIndex) {
                 scope.launch { pagerState.animateScrollToPage(pagerState.currentPage + 1) }
             }
         }
-        val onPrev = {
+
+        fun goToPrev() {
             if (pagerState.currentPage > 0) {
                 scope.launch { pagerState.animateScrollToPage(pagerState.currentPage - 1) }
             }
         }
 
-        HorizontalPager(
-            state = pagerState,
+        // The Root Box captures the key events
+        Box(
             modifier = Modifier
                 .fillMaxSize()
                 .focusRequester(focusRequester)
@@ -43,17 +42,32 @@ fun App() {
                 .onKeyEvent { event ->
                     if (event.type == KeyEventType.KeyDown) {
                         when (event.key) {
-                            Key.DirectionRight, Key.Spacebar -> { onNext(); true }
-                            Key.DirectionLeft -> { onPrev(); true }
+                            // Standard Clicker / Keyboard Mappings
+                            Key.PageDown, Key.DirectionRight, Key.Spacebar -> {
+                                goToNext()
+                                true
+                            }
+                            Key.PageUp, Key.DirectionLeft -> {
+                                goToPrev()
+                                true
+                            }
                             else -> false
                         }
-                    } else false
+                    } else {
+                        false
+                    }
                 }
-        ) { pageIndex ->
-            SlideRenderer(myPresentationSlides[pageIndex])
+        ) {
+            HorizontalPager(
+                state = pagerState,
+                modifier = Modifier.fillMaxSize(),
+                userScrollEnabled = false // Optional: Disable swipe if you want strict clicker control
+            ) { pageIndex ->
+                SlideRenderer(myPresentationSlides[pageIndex])
+            }
         }
 
-        // Request focus so keyboard events are captured immediately
+        // Crucial: Request focus immediately so the app catches the first click
         LaunchedEffect(Unit) {
             focusRequester.requestFocus()
         }
