@@ -23,12 +23,16 @@ sealed interface Slide {
 
     data class ImageSlide(
         override val title: String,
-        val image: DrawableResource, // <--- The magic type
+        val image: DrawableResource,
         val caption: String? = null
     ) : Slide
 
     data object InteractiveDemo : Slide {
         override val title: String = "Ubiquitous Computing"
+    }
+
+    data object PlaygroundSlide : Slide {
+        override val title = "State & UI: One Source"
     }
     // A special slide that takes a Composable for total freedom
     data class Custom(
