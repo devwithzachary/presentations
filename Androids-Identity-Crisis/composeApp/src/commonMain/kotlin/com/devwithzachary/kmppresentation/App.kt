@@ -12,9 +12,20 @@ import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.input.key.*
 import kotlinx.coroutines.launch
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.tween
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.util.lerp
+import kotlin.math.absoluteValue
 
 @Composable
 fun App() {
+
+    val transitionSpec = tween<Float>(
+        durationMillis = 600,
+        easing = FastOutSlowInEasing
+    )
+
     MaterialTheme {
         val pagerState = rememberPagerState(pageCount = { myPresentationSlides.size })
         val scope = rememberCoroutineScope()
@@ -23,13 +34,23 @@ fun App() {
         // Navigation Logic
         fun goToNext() {
             if (pagerState.currentPage < myPresentationSlides.lastIndex) {
-                scope.launch { pagerState.animateScrollToPage(pagerState.currentPage + 1) }
+                scope.launch {
+                    pagerState.animateScrollToPage(
+                        pagerState.currentPage + 1,
+                        animationSpec = transitionSpec
+                    )
+                }
             }
         }
 
         fun goToPrev() {
-            if (pagerState.currentPage > 0) {
-                scope.launch { pagerState.animateScrollToPage(pagerState.currentPage - 1) }
+            if (pagerState.currentPage < myPresentationSlides.lastIndex) {
+                scope.launch {
+                    pagerState.animateScrollToPage(
+                        pagerState.currentPage - 1,
+                        animationSpec = transitionSpec
+                    )
+                }
             }
         }
 
@@ -61,13 +82,38 @@ fun App() {
             HorizontalPager(
                 state = pagerState,
                 modifier = Modifier.fillMaxSize(),
-                userScrollEnabled = false // Optional: Disable swipe if you want strict clicker control
+                userScrollEnabled = false // Keep false for clicker-only control
             ) { pageIndex ->
-                SlideRenderer(myPresentationSlides[pageIndex])
+
+                val pageOffset = (
+                        (pagerState.currentPage - pageIndex) + pagerState.currentPageOffsetFraction
+                        ).absoluteValue
+
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .graphicsLayer {
+                            val scale = lerp(
+                                start = 1f,
+                                stop = 0.85f,
+                                fraction = pageOffset.coerceIn(0f, 1f)
+                            )
+                            scaleX = scale
+                            scaleY = scale
+
+                            alpha = lerp(
+                                start = 1f,
+                                stop = 0.5f,
+                                fraction = pageOffset.coerceIn(0f, 1f)
+                            )
+
+                        }
+                ) {
+                    SlideRenderer(myPresentationSlides[pageIndex])
+                }
             }
         }
 
-        // Crucial: Request focus immediately so the app catches the first click
         LaunchedEffect(Unit) {
             focusRequester.requestFocus()
         }

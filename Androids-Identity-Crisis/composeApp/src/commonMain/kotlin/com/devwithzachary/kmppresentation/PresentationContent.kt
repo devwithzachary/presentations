@@ -31,5 +31,6 @@ val myPresentationSlides = listOf(
             title = "The Evolution",
     image = Res.drawable.android_logo, // This matches your filename
     caption = "From a green robot to a multi-platform powerhouse."
-)
+    ),
+    Slide.InteractiveDemo
 )

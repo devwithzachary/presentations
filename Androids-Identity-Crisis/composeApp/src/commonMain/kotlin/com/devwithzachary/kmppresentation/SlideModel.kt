@@ -27,6 +27,9 @@ sealed interface Slide {
         val caption: String? = null
     ) : Slide
 
+    data object InteractiveDemo : Slide {
+        override val title: String = "Ubiquitous Computing"
+    }
     // A special slide that takes a Composable for total freedom
     data class Custom(
         override val title: String,

@@ -8,6 +8,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.resources.painterResource
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.text.font.FontFamily
 
 @Composable
 fun SlideRenderer(slide: Slide) {
@@ -46,12 +51,28 @@ fun SlideRenderer(slide: Slide) {
                     }
                 }
                 is Slide.Code -> {
-                    Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
-                        Text(
-                            text = slide.codeSnippet,
-                            fontFamily = androidx.compose.ui.text.font.FontFamily.Monospace,
-                            modifier = Modifier.padding(16.dp)
-                        )
+                    Card(
+                        shape = RoundedCornerShape(8.dp),
+                        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp)
+                        // Ensure card handles clicks so keys don't get trapped (optional, based on previous fix)
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .background(CodeTheme.Background) // Dark background
+                                .fillMaxWidth()
+                                .horizontalScroll(rememberScrollState()) // Allow horizontal scrolling for long lines
+                                .padding(24.dp)
+                        ) {
+                            Text(
+                                text = highlightCode(slide.codeSnippet), // <--- THE MAGIC
+                                fontFamily = FontFamily.Monospace,
+                                style = MaterialTheme.typography.bodyLarge,
+                                lineHeight = MaterialTheme.typography.bodyLarge.fontSize * 1.5 // Breathing room
+                            )
+                        }
                     }
                 }
 
@@ -75,6 +96,10 @@ fun SlideRenderer(slide: Slide) {
                             modifier = Modifier.padding(top = 8.dp)
                         )
                     }
+                }
+
+                is Slide.InteractiveDemo -> {
+                    InteractiveDemoSlide()
                 }
 
                 is Slide.Custom -> slide.content()
