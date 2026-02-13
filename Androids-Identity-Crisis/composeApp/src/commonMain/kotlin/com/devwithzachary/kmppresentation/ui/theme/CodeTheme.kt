@@ -1,4 +1,4 @@
-package com.devwithzachary.kmppresentation
+package com.devwithzachary.kmppresentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

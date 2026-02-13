@@ -16,6 +16,8 @@ import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.tween
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.util.lerp
+import com.devwithzachary.kmppresentation.model.myPresentationSlides
+import com.devwithzachary.kmppresentation.ui.renderer.SlideRenderer
 import kotlin.math.absoluteValue
 
 @Composable

@@ -1,4 +1,4 @@
-package com.devwithzachary.kmppresentation
+package com.devwithzachary.kmppresentation.model
 
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.resources.DrawableResource

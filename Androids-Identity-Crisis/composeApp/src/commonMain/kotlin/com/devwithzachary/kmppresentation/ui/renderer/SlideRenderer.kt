@@ -1,4 +1,4 @@
-package com.devwithzachary.kmppresentation
+package com.devwithzachary.kmppresentation.ui.renderer
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -13,6 +13,9 @@ import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.text.font.FontFamily
+import com.devwithzachary.kmppresentation.model.Slide
+import com.devwithzachary.kmppresentation.ui.components.InteractiveDemoSlide
+import com.devwithzachary.kmppresentation.ui.theme.CodeTheme
 
 @Composable
 fun SlideRenderer(slide: Slide) {

@@ -1,4 +1,4 @@
-package com.devwithzachary.kmppresentation
+package com.devwithzachary.kmppresentation.model
 
 import kmppresentation.composeapp.generated.resources.Res
 import kmppresentation.composeapp.generated.resources.android_logo

@@ -1,9 +1,10 @@
-package com.devwithzachary.kmppresentation
+package com.devwithzachary.kmppresentation.ui.renderer
 
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
+import com.devwithzachary.kmppresentation.ui.theme.CodeTheme
 
 fun highlightCode(code: String): AnnotatedString {
     return buildAnnotatedString {

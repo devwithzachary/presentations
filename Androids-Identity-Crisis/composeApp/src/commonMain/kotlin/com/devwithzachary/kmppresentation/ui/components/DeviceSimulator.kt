@@ -1,4 +1,4 @@
-package com.devwithzachary.kmppresentation
+package com.devwithzachary.kmppresentation.ui.components
 
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
