@@ -1,5 +1,13 @@
 # Retired Talks
 
+Slides are compiled into html pages using [Marp](https://github.com/marp-team/marp-cli)
+
+Run
+
+```
+npx @marp-team/marp-cli@latest -w slide-deck.md
+```
+
 ## Building a Kotlin Multiplatform Library in 10 Minutes. Why Not?
 - [Source](https://github.com/devwithzachary/presentations/tree/main/kotlin-multiplatform-library-in-10-minutes)
 - [Deck](https://devwithzachary.github.io/presentations/kotlin-multiplatform-library-in-10-minutes/deck.html)
