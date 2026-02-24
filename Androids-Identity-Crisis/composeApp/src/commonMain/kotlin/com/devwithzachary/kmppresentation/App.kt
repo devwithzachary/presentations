@@ -37,10 +37,7 @@ fun App() {
         fun goToNext() {
             if (pagerState.currentPage < myPresentationSlides.lastIndex) {
                 scope.launch {
-                    pagerState.animateScrollToPage(
-                        pagerState.currentPage + 1,
-                        animationSpec = transitionSpec
-                    )
+                    pagerState.scrollToPage(pagerState.currentPage + 1)
                 }
             }
         }
@@ -48,10 +45,7 @@ fun App() {
         fun goToPrev() {
             if (pagerState.currentPage < myPresentationSlides.lastIndex) {
                 scope.launch {
-                    pagerState.animateScrollToPage(
-                        pagerState.currentPage - 1,
-                        animationSpec = transitionSpec
-                    )
+                    pagerState.scrollToPage(pagerState.currentPage - 1)
                 }
             }
         }
@@ -94,7 +88,7 @@ fun App() {
                 Box(
                     modifier = Modifier
                         .fillMaxSize()
-                        .graphicsLayer {
+                        /*.graphicsLayer {
                             val scale = lerp(
                                 start = 1f,
                                 stop = 0.85f,
@@ -109,7 +103,7 @@ fun App() {
                                 fraction = pageOffset.coerceIn(0f, 1f)
                             )
 
-                        }
+                        }*/
                 ) {
                     SlideRenderer(myPresentationSlides[pageIndex])
                 }

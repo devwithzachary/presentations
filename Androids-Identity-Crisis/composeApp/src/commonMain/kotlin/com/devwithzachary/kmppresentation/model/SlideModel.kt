@@ -27,14 +27,25 @@ sealed interface Slide {
         val caption: String? = null
     ) : Slide
 
+    data class TextAndImage(
+        override val title: String,
+        val bullets: List<String>,
+        val image: DrawableResource
+    ) : Slide
+
     data object InteractiveDemo : Slide {
-        override val title: String = "Ubiquitous Computing"
+        override val title: String = "Even This Presentation!"
     }
 
     data object PlaygroundSlide : Slide {
         override val title = "State & UI: One Source"
     }
-    // A special slide that takes a Composable for total freedom
+
+    data class PrizeDraw(
+        override val title: String,
+        val fileName: String
+    ) : Slide
+
     data class Custom(
         override val title: String,
         val content: @Composable () -> Unit
