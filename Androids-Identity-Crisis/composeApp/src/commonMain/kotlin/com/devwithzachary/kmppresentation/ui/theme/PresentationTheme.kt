@@ -9,17 +9,18 @@ import androidx.compose.ui.unit.Dp
 @Composable
 fun ResponsivePresentationTheme(
     windowWidth: Dp,
+    windowHeight: Dp,
     content: @Composable () -> Unit
 ) {
-    // 1. Calculate Scale Factor
-    // We assume a "Standard" slide width is 1920dp (1080p screen).
-    // If the window is smaller/larger, we scale up/down.
-    // We add a 'baseBoost' because projector text needs to be huge by default.
     val baseReferenceWidth = 1920f
-    val baseBoost = 1.5f // Make everything 1.5x bigger than a normal app
+    val baseReferenceHeight = 1080f
+    val baseBoost = 1.5f
 
-    val scale = remember(windowWidth) {
-        (windowWidth.value / baseReferenceWidth) * baseBoost
+    val scale = remember(windowWidth, windowHeight) {
+        val widthRatio = windowWidth.value / baseReferenceWidth
+        val heightRatio = windowHeight.value / baseReferenceHeight
+
+        minOf(widthRatio, heightRatio) * baseBoost
     }
 
     val baseTypography = MaterialTheme.typography

@@ -34,8 +34,10 @@ fun SlideRenderer(slide: Slide) {
     // 1. Capture the window size
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
         val windowWidth = maxWidth
+        val windowHeight = maxHeight
 
-        ResponsivePresentationTheme(windowWidth = windowWidth) {
+        ResponsivePresentationTheme(windowWidth = windowWidth,
+            windowHeight = windowHeight) {
             Surface(
                 modifier = Modifier.fillMaxSize(),
                 color = MaterialTheme.colorScheme.background
@@ -100,8 +102,8 @@ fun SlideRenderer(slide: Slide) {
                                         Text(
                                             text = highlightCode(slide.codeSnippet),
                                             fontFamily = FontFamily.Monospace,
-                                            style = MaterialTheme.typography.bodyLarge,
-                                            lineHeight = MaterialTheme.typography.bodyLarge.fontSize * 1.5
+                                            style = MaterialTheme.typography.bodyMedium,
+                                            lineHeight = MaterialTheme.typography.bodyMedium.fontSize * 1.5
                                         )
                                     }
                                 }

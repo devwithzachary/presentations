@@ -19,7 +19,7 @@ internal val Res.drawable.Samsung_Galaxy_S_White: DrawableResource by lazy {
       ))
     }
 
-@delegate:ResourceContentHash(-1_656_649_490)
+@delegate:ResourceContentHash(-1_855_345_004)
 internal val Res.drawable.android_devices: DrawableResource by lazy {
       DrawableResource("drawable:android_devices", setOf(
         ResourceItem(setOf(), "${MD}drawable/android-devices.png", -1, -1),

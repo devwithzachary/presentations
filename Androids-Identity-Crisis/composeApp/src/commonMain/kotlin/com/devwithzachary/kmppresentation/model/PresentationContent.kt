@@ -243,6 +243,12 @@ val myPresentationSlides = listOf(
         title = "Key Changes in SDK 37 (Android 17)",
         items = listOf(
             "When running on a large screen (smaller dimension ≥ 600dp), the following attributes and APIs will be ignored",
+        )
+    ),
+    Slide.BulletList(
+        title = "Key Changes in SDK 37 (Android 17)",
+        items = listOf(
+            "When running on a large screen (smaller dimension ≥ 600dp), the following attributes and APIs will be ignored",
             "screenOrientation - portrait, reversePortrait, sensorPortrait, userPortrait, landscape, reverseLandscape, sensorLandscape, userLandscape",
         )
     ),
@@ -283,23 +289,6 @@ val myPresentationSlides = listOf(
             "minAspectRatio - all",
             "maxAspectRatio - all"
         )
-    ),
-    Slide.TextAndImage(
-        title = "Android as a Desktop OS",
-        bullets = listOf(
-            "Android 17: Desktop Mode is no longer 'experimental.'",
-
-        ),
-        image = Res.drawable.android_devices
-    ),
-    Slide.TextAndImage(
-        title = "Android as a Desktop OS",
-        bullets = listOf(
-            "Android 17: Desktop Mode is no longer 'experimental.'",
-            "Taskbars, Status bars, and floating windows are the standard.",
-
-        ),
-        image = Res.drawable.android_devices
     ),
     Slide.BulletList(
         title = "What you should all be doing today!",
@@ -363,7 +352,23 @@ val myPresentationSlides = listOf(
             }
         """.trimIndent()
     ),
+    Slide.TextAndImage(
+        title = "Android as a Desktop OS",
+        bullets = listOf(
+            "Android 17: Desktop Mode is no longer 'experimental.'",
 
+            ),
+        image = Res.drawable.android_devices
+    ),
+    Slide.TextAndImage(
+        title = "Android as a Desktop OS",
+        bullets = listOf(
+            "Android 17: Desktop Mode is no longer 'experimental.'",
+            "Taskbars, Status bars, and floating windows are the standard.",
+
+            ),
+        image = Res.drawable.android_devices
+    ),
     Slide.TextAndImage(
         title = "Android as a Desktop OS",
         bullets = listOf(
