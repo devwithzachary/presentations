@@ -79,15 +79,6 @@ val myPresentationSlides = listOf(
         ),
         image = Res.drawable.found_me,
     ),
-    Slide.TextAndImage(
-        title = "Free Stuff!",
-        bullets = listOf(
-            "3x 100% off Voucher Codes for Android Makers by droidCon",
-            "3x 100% off Voucher Codes for droidCon London 2026",
-            "5x 100% off Voucher Codes for Next App devCon",
-        ),
-        image = Res.drawable.qr_code,
-    ),
     Slide.ImageSlide(
         title = "Android in the Early Days",
         image = Res.drawable.Samsung_Galaxy_S_White,
@@ -478,16 +469,12 @@ val myPresentationSlides = listOf(
         subtitle = "Android has won the battle of being the most versatile OS on the planet. \n It is no longer just a mobile OS. \n Our job is to finally start acting like it."
     ),
     Slide.TextAndImage(
-        title = "View the slides and find me!",
+        title = "Thank you!",
         bullets = listOf(
             "I'm @devwithzachary across the internet",
-            "links.zpweb.site",
+            "devwithzachary.com",
             "QR code for slides!",
         ),
         image = Res.drawable.github_qr,
-    ),
-    Slide.Title(
-        title = "Thank you!",
-        subtitle = "That's all folks... now on with the giveaway!."
     ),
 )

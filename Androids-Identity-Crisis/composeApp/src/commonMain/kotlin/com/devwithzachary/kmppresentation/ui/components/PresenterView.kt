@@ -59,7 +59,7 @@ fun PresenterView(state: PresentationState) {
                 horizontalArrangement = Arrangement.spacedBy(16.dp)
             ) {
                 // LEFT: Current Slide (Takes up 70% of the width)
-                Column(modifier = Modifier.weight(0.7f).fillMaxHeight()) {
+                Column(modifier = Modifier.weight(0.5f).fillMaxHeight()) {
                     Text("CURRENT", style = MaterialTheme.typography.labelLarge, color = Color.Gray)
                     Spacer(Modifier.height(8.dp))
                     Box(
@@ -75,7 +75,7 @@ fun PresenterView(state: PresentationState) {
                 }
 
                 // RIGHT: Next Slide (Takes up 30% of the width)
-                Column(modifier = Modifier.weight(0.3f).fillMaxHeight()) {
+                Column(modifier = Modifier.weight(0.5f).fillMaxHeight()) {
                     Text("NEXT", style = MaterialTheme.typography.labelLarge, color = Color.Gray)
                     Spacer(Modifier.height(8.dp))
                     Box(
